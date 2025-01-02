@@ -1,0 +1,46 @@
+<div class="mortgage-calculator">
+    <h2>Mortgage Calculator</h2>
+  
+    <form (ngSubmit)="calculateMortgage()">
+      <div class="form-group">
+        <label for="principal">Principal (Loan Amount)</label>
+        <input
+          id="principal"
+          type="number"
+          [(ngModel)]="principal"
+          name="principal"
+          required
+        />
+      </div>
+  
+      <div class="form-group">
+        <label for="annualInterestRate">Annual Interest Rate (%)</label>
+        <input
+          id="annualInterestRate"
+          type="number"
+          [(ngModel)]="annualInterestRate"
+          name="annualInterestRate"
+          step="0.1"
+          required
+        />
+      </div>
+  
+      <div class="form-group">
+        <label for="years">Loan Term (Years)</label>
+        <input
+          id="years"
+          type="number"
+          [(ngModel)]="years"
+          name="years"
+          required
+        />
+      </div>
+  
+      <button type="submit">Calculate</button>
+    </form>
+  
+    <div class="result" *ngIf="monthlyPayment > 0">
+      <h3>Monthly Payment: {{ monthlyPayment | currency }}</h3>
+    </div>
+  </div>
+  

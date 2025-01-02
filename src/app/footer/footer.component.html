@@ -1,0 +1,66 @@
+<footer class="bg-white">
+    <hr />
+    <div class="container px-6 py-6 mx-auto">
+        <div class="md:flex md:-mx-3 md:items-center md:justify-between">
+            <h1 class="text-xl font-semibold tracking-tight  md:mx-3 xl:text-2xl text-black">Subscribe to our newsletter for updates.</h1>
+            
+            <div class="mt-6 md:mx-3 shrink-0 md:mt-0 md:w-auto">
+                <form class="contact-form" (submit)="sendEmail($event)">
+                    <input class="border border-black p-2 rounded-lg w-64" type="email" name="user_email">
+                    <input class="bg-green-500 ml-2 py-2 px-4 rounded-lg font-medium text-white hover:bg-green-600"  type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+        
+        <hr class="my-6 border-gray-200 md:my-10 ">
+
+        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+            <div>
+                <p class="font-semibold text-black">Quick Links</p>
+                
+                <div class="flex flex-col items-start mt-5 space-y-2 text-sm">
+                    <a href="#" class="text-neutral-700 transition-colors duration-300   hover:underline hover:text-green-500">About us</a>
+                    <a href="#" class="text-neutral-700 transition-colors duration-300   hover:underline hover:text-green-500">Advertise with us</a>
+                    <a href="#" class="text-neutral-700 transition-colors duration-300   hover:underline hover:text-green-500">Site map</a>
+                </div>
+            </div>
+
+            <div>
+                <p class="font-semibold text-black">Help</p>
+
+                <div class="flex flex-col items-start mt-5 space-y-2 text-sm">
+                    <a href="#" class="text-neutral-700 transition-colors duration-300   hover:underline hover:text-green-500">Contact us</a>
+                    <a href="#" class="text-neutral-700 transition-colors duration-300   hover:underline hover:text-green-500">Compare rates</a>
+                    <a href="#" class="text-neutral-700 transition-colors duration-300   hover:underline hover:text-green-500">Latest news</a>
+                    <a href="#" class="text-neutral-700 transition-colors duration-300   hover:underline hover:text-green-500">Popular topics</a>
+                </div>
+            </div>
+
+            <div>
+                <p class="font-semibold text-black">Legal</p>
+
+                <div class="flex flex-col items-start mt-5 space-y-2 text-sm">
+                    <a href="#" class="text-neutral-700 transition-colors duration-300   hover:underline hover:text-green-500">Privacy policy</a>
+                    <a href="#" class="text-neutral-700 transition-colors duration-300  hover:underline hover:text-green-500">Cookie Settings</a>
+                    <a href="#" class="text-neutral-700 transition-colors duration-300   hover:underline hover:text-green-500">Understanding MoneyMindset's averages</a>
+                    <a href="#" class="text-neutral-700 transition-colors duration-300   hover:underline hover:text-green-500">Terms of use</a>
+                    <a href="#" class="text-neutral-700 transition-colors duration-300   hover:underline hover:text-green-500">GLBA annual notice</a>
+                    <a href="#" class="text-neutral-700 transition-colors duration-300   hover:underline hover:text-green-500">California Consumer Financial Privacy Notice</a>
+                    <a href="#" class="text-neutral-700 transition-colors duration-300   hover:underline hover:text-green-500">Licenses</a>
+                </div>
+            </div>
+
+
+        </div>
+        
+        <hr class="my-6 border-gray-200 md:my-10 ">
+        
+        <div class="flex flex-col items-center justify-between sm:flex-row">
+            <a href="#">
+                <img class="w-auto h-12 opacity-80" src="./mm.svg" alt="">
+            </a>
+
+            <p class="mt-4 text-sm text-black/70 sm:mt-0 ">© 2025 Adair, LLC. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
