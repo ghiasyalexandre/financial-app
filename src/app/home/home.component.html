@@ -5,8 +5,8 @@
 
     <!---------------- Home Title ----------------->
     <div class="text-white font-medium">
-      <h1 class="text-4xl pt-12 mb-4">Healthier wallet, happier you</h1>
-      <p>
+      <h1 class="text-4xl pt-12 mb-4 px-2">Healthier wallet, happier you</h1>
+      <p class="px-2">
         Level up your financial wellbeing with MoneyMindset's expert tools and
         guidance.
       </p>
@@ -23,7 +23,7 @@
       <div
         class="bg-white py-8 rounded-lg shadow-lg shadow-black/30 flex flex-col justify-center cursor-pointer hover:scale-105 duration-300 ease-in-out border border-black group"
       >
-        <img class="h-12 mb-2" src="./mm.svg" />
+        <img class="h-12 mb-2" draggable="false" src="./mm.svg" />
         <h2 class="text-black group-hover:text-green-500">
           High-yield savings
         </h2>
@@ -31,25 +31,25 @@
       <div
         class="bg-white py-8 rounded-lg shadow-lg shadow-black/30 flex flex-col justify-center cursor-pointer hover:scale-105 duration-300 ease-in-out border border-black group"
       >
-        <img class="h-12 mb-2" src="./mm.svg" />
+        <img class="h-12 mb-2" draggable="false" src="./mm.svg" />
         <h2 class="text-black group-hover:text-green-500">Home refinance</h2>
       </div>
       <div
         class="bg-white py-8 rounded-lg shadow-lg shadow-black/30 flex flex-col justify-center cursor-pointer hover:scale-105 duration-300 ease-in-out border border-black group"
       >
-        <img class="h-12 mb-2" src="./mm.svg" />
+        <img class="h-12 mb-2" draggable="false" src="./mm.svg" />
         <h2 class="text-black group-hover:text-green-500">Credit cards</h2>
       </div>
       <div
         class="bg-white py-8 rounded-lg shadow-lg shadow-black/30 flex flex-col justify-center cursor-pointer hover:scale-105 duration-300 ease-in-out border border-black group"
       >
-        <img class="h-12 mb-2" src="./mm.svg" />
+        <img class="h-12 mb-2" draggable="false" src="./mm.svg" />
         <h2 class="text-black group-hover:text-green-500">Home equity</h2>
       </div>
       <div
         class="bg-white py-8 rounded-lg shadow-lg shadow-black/30 flex flex-col justify-center cursor-pointer hover:scale-105 duration-300 ease-in-out border border-black group"
       >
-        <img class="h-12 mb-2" src="./mm.svg" />
+        <img class="h-12 mb-2" draggable="false" src="./mm.svg" />
         <h2 class="text-black group-hover:text-green-500">
           Mortgage calculator
         </h2>
@@ -57,20 +57,20 @@
       <div
         class="bg-white py-8 rounded-lg shadow-lg shadow-black/30 flex flex-col justify-center cursor-pointer hover:scale-105 duration-300 ease-in-out border border-black group"
       >
-        <img class="h-12 mb-2" src="./mm.svg" />
+        <img class="h-12 mb-2" draggable="false" src="./mm.svg" />
         <h2 class="text-black group-hover:text-green-500">CD rates</h2>
       </div>
       <div
         class="bg-white py-8 rounded-lg shadow-lg shadow-black/30 flex flex-col justify-center cursor-pointer hover:scale-105 duration-300 ease-in-out border border-black group"
       >
-        <img class="h-12 mb-2" src="./mm.svg" />
+        <img class="h-12 mb-2" draggable="false" src="./mm.svg" />
         <h2 class="text-black group-hover:text-green-500">Personal loans</h2>
       </div>
     </div>
   </div>
 
   <!---------------------- Hero Section -------------------------->
-  <div class="w-full px-8 text-center my-12 text-white">
+  <div class="w-full px-4 lg:px-8 text-center my-12 text-white">
     <div
       class="bg-emerald-600 py-8 px-8 shadow-lg shadow-black/30"
       style="border-top-left-radius: 4rem; border-bottom-right-radius: 4rem"
@@ -82,17 +82,21 @@
       </button>
       <br />
       <h2 class="text-2xl mb-4 font-medium">Our top picks for 2025</h2>
-      <p class="font-medium px-32">
+      <p class="font-medium px-4 md:px-32">
         Presenting the 2025 MoneyMindset Awards. Our experts dug into all the
         data to handpick the best of the best for you.
       </p>
       <br />
       <button
-        class="bg-green-500 hover:bg-green-600 transition-colors ease-in-out duration-300 rounded-lg py-3 px-6 font-medium"
+        class="bg-green-500 hover:bg-green-600 shadow-md shadow-black/30 transition-colors ease-in-out duration-300 rounded-lg py-3 px-6 font-medium"
       >
         See the winners!
       </button>
-      <img class="h-24 mt-8 flex justify-self-center invert" src="./mm.svg" />
+      <img
+        draggable="false"
+        class="h-24 mt-8 flex justify-self-center invert"
+        src="./mm.svg"
+      />
     </div>
   </div>
 
@@ -101,12 +105,13 @@
     <h3 class="text-center text-xl font-bold">
       MoneyMindset helps millions of people do more with their money
     </h3>
-    <div class="flex justify-center gap-12 mt-8">
+    <div class="flex flex-col md:flex-row justify-center gap-12 mt-8">
       <div class="relative">
         <div
           class="bg-green-500/50 shadow-lg -z-30 shadow-black/30 rounded-lg bottom-0 absolute w-72 -translate-x-2 h-60 flex justify-center"
         ></div>
         <img
+          draggable="false"
           class="h-72"
           src="https://www.bankrate.com/f/102997/646x699/38fd0de948/stat-image.png?auto=webp&optimize=high&height=356"
         />
@@ -132,114 +137,133 @@
   </div>
 
   <!--------------- Mortgages, CDs, and Savings ------------------>
-<div class="relative mt-12 flex flex-col place-items-center ">
-
-  <div class="text-black -top-16 absolute z-50 font-medium bg-white rounded-full p-2 mt-8 flex justify-center gap-4 ">
-    <button type="button" #mortgagesButton class="border border-neutral-400 rounded-full py-3 px-4 hover:border-green-500 hover:text-green-500 focus:bg-green-500 focus:text-white transition-all ease-in-out duration-300">
-      Mortgages
-    </button>
-    <button class="border border-neutral-400 rounded-full py-3 px-4 hover:border-green-500 hover:text-green-500 focus:bg-green-500 focus:text-white transition-all ease-in-out duration-300">
-      CDs
-    </button>
-    <button class="border border-neutral-400 rounded-full py-3 px-4 hover:border-green-500 hover:text-green-500 focus:bg-green-500 focus:text-white transition-all ease-in-out duration-300">
-      Savings
-    </button>
-  </div>
-
-  <div
-    class="bg-emerald-600 py-12 px-8  mb-12 mx-8 z-30 text-white relative flex flex-col place-items-center overflow-hidden"
-    style="border-top-left-radius: 4rem; border-bottom-right-radius: 4rem"
-  >
+  <div class="relative mt-12 flex flex-col place-items-center">
+    <div
+      class="text-black -top-16 absolute z-50 font-medium bg-white rounded-full p-2 mt-8 flex justify-center gap-4"
+    >
+      <button
+        type="button"
+        #mortgagesButton
+        class="border border-neutral-400 rounded-full py-3 px-4 hover:border-green-500 hover:text-green-500 focus:bg-green-500 focus:text-white transition-all ease-in-out duration-300"
+      >
+        Mortgages
+      </button>
+      <button
+        class="border border-neutral-400 rounded-full py-3 px-4 hover:border-green-500 hover:text-green-500 focus:bg-green-500 focus:text-white transition-all ease-in-out duration-300"
+      >
+        CDs
+      </button>
+      <button
+        class="border border-neutral-400 rounded-full py-3 px-4 hover:border-green-500 hover:text-green-500 focus:bg-green-500 focus:text-white transition-all ease-in-out duration-300"
+      >
+        Savings
+      </button>
+    </div>
 
     <div
-      class="absolute left-0 bottom-0 rounded-full w-96 h-96 -z-10 bg-gradient-to-br from-emerald-600 to-green-500 -translate-x-1/3 translate-y-1/4"
-    ></div>
-    <div class="flex gap-4 text-lg font-medium">
-      <button #ratesButton type="button" class="hover:focus:text-white focus:border-b-2 hover:text-neutral-200 border-white cursor-pointer">
-        <h3>Rates</h3>
-      </button>
-      <button class="hover:focus:text-white focus:border-b-2 hover:text-neutral-200 border-white cursor-pointer">
-        <h3>Trends</h3>
-      </button>
-    </div>
-    <h2 class="text-3xl font-semibold mt-4">Top mortgage offers</h2>
-    <p class="font-medium mt-4 text-lg">
-      Make your dream home a reality with the right mortgage.
-    </p>
-    <button
-      class="font-medium bg-green-500 shadow-md shadow-black/30 rounded-lg mt-4 py-3 px-4 hover:bg-green-700"
+      class="bg-emerald-600 py-12 px-8 mb-12 mx-8 z-30 text-white relative flex flex-col place-items-center overflow-hidden"
+      style="border-top-left-radius: 4rem; border-bottom-right-radius: 4rem"
     >
-      Compare mortgage rates
-    </button>
-    <div class="flex flex-col gap-4 mt-8">
       <div
-        class="flex justify-between w-[550px] cursor-pointer place-items-center bg-green-500 shadow-lg shadow-black/30 rounded-lg py-4 px-8"
-      >
-        <div class="">
-          <p class="text-neutral-100/90 text-sm font-medium">Term</p>
-          <p class="font-medium">10-year fixed</p>
-        </div>
-        <div>
-          <p class="text-neutral-100/90 text-sm font-medium">Rate</p>
-          <p class="text-xl font-bold">5.59%</p>
-        </div>
-        <div>
-          <p class="text-neutral-100/90 text-sm font-medium">APR</p>
-          <p class="text-xl font-bold">5.96%</p>
-        </div>
-        <button class="bg-white font-bold h-10 w-10 rounded-full text-green-600">
-          >
+        class="absolute left-0 bottom-0 rounded-full w-96 h-96 -z-10 bg-gradient-to-br from-emerald-600 to-green-500 -translate-x-1/3 translate-y-1/4"
+      ></div>
+      <div class="flex gap-4 text-lg font-medium">
+        <button
+          #ratesButton
+          type="button"
+          class="hover:focus:text-white focus:border-b-2 hover:text-neutral-200 border-white cursor-pointer"
+        >
+          <h3>Rates</h3>
+        </button>
+        <button
+          class="hover:focus:text-white focus:border-b-2 hover:text-neutral-200 border-white cursor-pointer"
+        >
+          <h3>Trends</h3>
         </button>
       </div>
-      <div
-        class="flex justify-between w-[550px] cursor-pointer place-items-center bg-green-500 shadow-lg shadow-black/30 rounded-lg py-4 px-8"
-      >
-        <div class="">
-          <p class="text-neutral-100/90 text-sm font-medium">Term</p>
-          <p class="font-medium">15-year fixed</p>
-        </div>
-        <div>
-          <p class="text-neutral-100/90 text-sm font-medium">Rate</p>
-          <p class="text-xl font-bold">5.54%</p>
-        </div>
-        <div>
-          <p class="text-neutral-100/90 text-sm font-medium">APR</p>
-          <p class="text-xl font-bold">5.83%</p>
-        </div>
-        <button class="bg-white font-bold h-10 w-10 rounded-full text-green-600">
-          >
-        </button>
-      </div>
-      <div
-        class="flex justify-between w-[550px] cursor-pointer place-items-center bg-green-500 shadow-lg shadow-black/30 rounded-lg py-4 px-8"
-      >
-        <div class="">
-          <p class="text-neutral-100/90 text-sm font-medium">Term</p>
-          <p class="font-medium">30-year fixed</p>
-        </div>
-        <div>
-          <p class="text-neutral-100/90 text-sm font-medium">Rate</p>
-          <p class="text-xl font-bold">6.36%</p>
-        </div>
-        <div>
-          <p class="text-neutral-100/90 text-sm font-medium">APR</p>
-          <p class="text-xl font-bold">6.57%</p>
-        </div>
-        <button class="bg-white font-bold h-10 w-10 rounded-full text-green-600">
-          >
-        </button>
-      </div>
-      <p
-        class="text-center text-xs mt-2 underline underline-offset-2 cursor-pointer"
-      >
-        How are these rates calculated?
+      <h2 class="text-3xl font-semibold mt-4">Top mortgage offers</h2>
+      <p class="font-medium mt-4 text-lg">
+        Make your dream home a reality with the right mortgage.
       </p>
+      <button
+        class="font-medium bg-green-500 shadow-md shadow-black/30 rounded-lg mt-4 py-3 px-4 hover:bg-green-700"
+      >
+        Compare mortgage rates
+      </button>
+      <div class="flex flex-col gap-4 mt-8">
+        <div
+          class="flex justify-between w-[550px] cursor-pointer place-items-center bg-green-500 shadow-lg shadow-black/30 rounded-lg py-4 px-8"
+        >
+          <div class="">
+            <p class="text-neutral-100/90 text-sm font-medium">Term</p>
+            <p class="font-medium">10-year fixed</p>
+          </div>
+          <div>
+            <p class="text-neutral-100/90 text-sm font-medium">Rate</p>
+            <p class="text-xl font-bold">5.59%</p>
+          </div>
+          <div>
+            <p class="text-neutral-100/90 text-sm font-medium">APR</p>
+            <p class="text-xl font-bold">5.96%</p>
+          </div>
+          <button
+            class="bg-white font-bold h-10 w-10 rounded-full text-green-600"
+          >
+            >
+          </button>
+        </div>
+        <div
+          class="flex justify-between w-[550px] cursor-pointer place-items-center bg-green-500 shadow-lg shadow-black/30 rounded-lg py-4 px-8"
+        >
+          <div class="">
+            <p class="text-neutral-100/90 text-sm font-medium">Term</p>
+            <p class="font-medium">15-year fixed</p>
+          </div>
+          <div>
+            <p class="text-neutral-100/90 text-sm font-medium">Rate</p>
+            <p class="text-xl font-bold">5.54%</p>
+          </div>
+          <div>
+            <p class="text-neutral-100/90 text-sm font-medium">APR</p>
+            <p class="text-xl font-bold">5.83%</p>
+          </div>
+          <button
+            class="bg-white font-bold h-10 w-10 rounded-full text-green-600"
+          >
+            >
+          </button>
+        </div>
+        <div
+          class="flex justify-between w-[550px] cursor-pointer place-items-center bg-green-500 shadow-lg shadow-black/30 rounded-lg py-4 px-8"
+        >
+          <div class="">
+            <p class="text-neutral-100/90 text-sm font-medium">Term</p>
+            <p class="font-medium">30-year fixed</p>
+          </div>
+          <div>
+            <p class="text-neutral-100/90 text-sm font-medium">Rate</p>
+            <p class="text-xl font-bold">6.36%</p>
+          </div>
+          <div>
+            <p class="text-neutral-100/90 text-sm font-medium">APR</p>
+            <p class="text-xl font-bold">6.57%</p>
+          </div>
+          <button
+            class="bg-white font-bold h-10 w-10 rounded-full text-green-600"
+          >
+            >
+          </button>
+        </div>
+        <p
+          class="text-center text-xs mt-2 underline underline-offset-2 cursor-pointer"
+        >
+          How are these rates calculated?
+        </p>
+      </div>
     </div>
   </div>
-</div>
 
   <!-- Team Showcase -->
-
   <div class="flex flex-col gap-6 mb-12 text-center">
     <h3 class="font-bold text-2xl">Experts in all things finance</h3>
     <p class="text-neutral-700 font-medium">
@@ -249,21 +273,21 @@
     <a class="text-green-500 text-lg font-semibold cursor-pointer"
       >About MoneyMindset ></a
     >
-    <div class="flex justify-center gap-4 md:gap-12 lg:gap-16">
+    <div class="flex flex-col md:flex-row place-items-center justify-center gap-8 md:gap-12 lg:gap-16">
       <div class="flex flex-col">
         <div
           class="bg-green-500 shadow-lg shadow-black/30 mb-2 rounded-full flex justify-center w-[150px] h-[150px] place-items-center"
         >
-          <img class="h-28" src="./mm.svg" />
+          <img class="h-28" draggable="false" src="./mm.svg" />
         </div>
         <h4 class="font-semibold">Greg McBride, CFA</h4>
         <p class="text-sm">Chief Financial Analyst</p>
       </div>
-      <div class="flex flex-col">
+      <div class="flex flex-col ">
         <div
           class="bg-green-500 shadow-lg shadow-black/30 mb-2 rounded-full flex justify-center w-[150px] h-[150px] place-items-center"
         >
-          <img class="h-28" src="./mm.svg" />
+          <img class="h-28" draggable="false" src="./mm.svg" />
         </div>
         <h4 class="font-semibold">Ghiasy Alexandre, CEO</h4>
         <p class="text-sm">Chief Executive Officier</p>
@@ -272,7 +296,7 @@
         <div
           class="bg-green-500 shadow-lg shadow-black/30 mb-2 rounded-full flex justify-center w-[150px] h-[150px] place-items-center"
         >
-          <img class="h-28" src="./mm.svg" />
+          <img class="h-28" draggable="false" src="./mm.svg" />
         </div>
         <h4 class="font-semibold">Anne Romulus, CEA</h4>
         <p class="text-sm">Chief Economic Analyst</p>
@@ -281,21 +305,21 @@
   </div>
 
   <!--------------- Federal Rate Cuts ----------------->
-  <div class="w-full px-8 text-center my-12 text-white">
+  <div class="w-full px-4 md:px-8 text-center my-12 text-white">
     <div
       class="bg-emerald-600 pt-8 px-8 shadow-lg shadow-black/30"
       style="border-top-left-radius: 4rem; border-bottom-right-radius: 4rem"
     >
-      <button
+      <h3
         class="bg-black py-1 px-4 font-medium flex justify-self-center rounded-full uppercase"
       >
         Federal Reserve
-      </button>
+      </h3>
       <br />
       <h2 class="text-2xl mb-4 font-medium">
         The Fed has now cut interst rates<br />three times
       </h2>
-      <p class="font-medium px-32">
+      <p class="font-medium px-4 lg:px-32">
         Get insights from Bankrate experts on the Fed’s latest decision and the
         steps you should take with your finances.
       </p>
@@ -305,11 +329,11 @@
       >
         Learn more
       </button>
-        <img
-          class="h-60 mt-8 flex justify-self-center "
-          src="https://www.bankrate.com/f/102997/822x896/6fb299429f/powell-fed-day.png?auto=webp&height=328&dpr=1"
-        />
-
+      <img
+        draggable="false"
+        class="h-60 mt-8 flex justify-self-center"
+        src="https://www.bankrate.com/f/102997/822x896/6fb299429f/powell-fed-day.png?auto=webp&height=328&dpr=1"
+      />
     </div>
   </div>
 
@@ -341,6 +365,7 @@
         src="https://www.bankrate.com/f/102997/x/9951dc14ea/logo-cnn.svg?auto=webp&optimize=high"
       />
       <img
+        draggable="false"
         class="h-6 hover:scale-110 transition-transform ease-in-out duration-300"
         src="https://www.bankrate.com/f/102997/121x24/3af40b51f9/logo-bloomberg.svg?auto=webp&optimize=high"
       />
@@ -349,20 +374,21 @@
   <hr />
 
   <!----------------- Calculators ----------->
-  <div class="w-full px-8 text-center my-12 text-white">
+  <div class="w-full px-4 md:px-8 text-center my-12 text-white">
     <div
       class="bg-emerald-600 pt-8 px-16 shadow-lg shadow-black/30"
       style="border-top-left-radius: 4rem; border-bottom-right-radius: 4rem"
     >
       <br />
       <h2 class="text-2xl mb-8 font-medium">Calculators for every question</h2>
-      <div class="grid grid-cols-2 gap-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div
           class="flex gap-3 place-items-center group hover:text-green-500 fill-current hover:bg-white bg-white/20 shadow-md shadow-black/30 pl-3 py-3 rounded-lg transition-all ease-in-out duration-300"
         >
           <img
             class="h-12 text-green-500 fill-current group-hover:invert"
             src="./mm-white.svg"
+            draggable="false"
           />
           <p class="font-semibold text-lg">Savings calculator</p>
         </div>
@@ -372,6 +398,7 @@
           <img
             class="h-12 text-green-500 fill-current group-hover:invert"
             src="./mm-white.svg"
+            draggable="false"
           />
           <p class="font-semibold text-lg">Mortgage calculator</p>
         </div>
@@ -381,6 +408,7 @@
           <img
             class="h-12 text-green-500 fill-current group-hover:invert"
             src="./mm-white.svg"
+            draggable="false"
           />
           <p class="font-semibold text-lg">Loan calculator</p>
         </div>
@@ -390,6 +418,7 @@
           <img
             class="h-12 text-green-500 fill-current group-hover:invert"
             src="./mm-white.svg"
+            draggable="false"
           />
           <p class="font-semibold text-lg">Credit card payoff</p>
         </div>
@@ -399,6 +428,7 @@
           <img
             class="h-12 text-green-500 fill-current group-hover:invert"
             src="./mm-white.svg"
+            draggable="false"
           />
           <p class="font-semibold text-lg">CD calculator</p>
         </div>
@@ -408,13 +438,15 @@
           <img
             class="h-12 text-green-500 fill-current group-hover:invert"
             src="./mm-white.svg"
+            draggable="false"
           />
           <p class="font-semibold text-lg">See all calculators</p>
         </div>
       </div>
 
       <img
-        class="h-60 mt-8 flex justify-self-center"
+        draggable="false"
+        class="h-60 mt-8 flex justify-self-center object-cover"
         src="https://www.bankrate.com/f/102997/924x659/a6de9a933b/homepage-calculators-vaction-wide.png?auto=webp&optimize=high&height=380"
       />
     </div>

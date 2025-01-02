@@ -1,8 +1,10 @@
 <nav class="bg-emerald-600 w-full h-20">
-  <ul class="flex justify-between pl-2 pr-4 place-items-center h-full font-medium text-white">
+  <ul class="sr-only md:not-sr-only flex justify-between pl-2 pr-4 place-items-center h-full font-medium text-white">
     <li>
-      <a routerLink="/">
-        <img class="h-12 w-12 invert" src="./mm.svg" />
+      <a routerLink="/" draggable="false">
+        <img        
+        draggable="false"
+        class="h-12 w-12 invert" src="./mm.svg" />
       </a>
     </li>
     <li class="group">
@@ -41,4 +43,21 @@
           </a>
     </li>
   </ul>
+
+   <!-- Mobile Friendly -->
+  <div class="not-sr-only md:sr-only flex justify-between pl-2 pr-4 place-items-center h-full font-medium text-white">
+    <a routerLink="/" draggable="false">
+      <img        
+      draggable="false"
+      class="h-12 w-12 invert" src="./mm.svg" />
+    </a>
+    <div class="flex gap-4">
+      <div>
+        Search
+      </div>
+      <div>
+        Options
+      </div>
+    </div>
+  </div>
 </nav>
