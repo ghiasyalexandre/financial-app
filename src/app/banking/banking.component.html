@@ -7,13 +7,13 @@
       <!-------- Alert Bar ----------->
       <div
         *ngIf="isAlertVisible"
-        class="w-full h-16 flex gap-2 place-items-center text-white bg-gradient-to-br from-emerald-600 via-emerald-500 to-green-500"
+        class="w-full h-fit py-2 flex gap-4 place-items-center justify-between text-white bg-gradient-to-br from-emerald-600 via-emerald-500 to-green-500"
       >
         <p class="pl-4 font-semibold text-left">
           Looking to level up your banking? Check out our picks for the best
           banks of 2025.
         </p>
-        <button class="pr-4 font-semibold" (click)="hideAlert()">X</button>
+        <button class="pr-4 font-semibold text-right" (click)="hideAlert()">X</button>
       </div>
 
       <!---------------- Home Title ----------------->
@@ -29,45 +29,45 @@
 
       <!---------------- Grid Boxes ----------------->
       <div
-        class="grid grid-cols-1 lg:grid-cols-3 mt-10 mx-4 md:mx-8 gap-4 md:gap-8 font-semibold text-lg"
+        class="grid grid-cols-1 md:grid-cols-3 mt-10 mx-4 md:mx-8 gap-4 md:gap-8 font-semibold text-lg"
       >
         <div
-          class="bg-white py-8 rounded-lg shadow-lg shadow-black/30 flex flex-col justify-center cursor-pointer hover:scale-105 duration-300 ease-in-out border border-black group"
+          class="bg-white py-8 rounded-lg shadow-lg shadow-black/30 flex flex-col justify-center cursor-pointer  duration-300 ease-in-out border border-black group"
         >
           <span class="material-symbols-outlined text-4xl mb-1"> ward </span>
-          <h2 class="text-black group-hover:text-green-500">Best CD Rates</h2>
+          <h2 class="text-black group-hover:text-green-500 px-2">Best CD Rates</h2>
         </div>
         <div
-          class="bg-white py-8 rounded-lg shadow-lg shadow-black/30 flex flex-col justify-center cursor-pointer hover:scale-105 duration-300 ease-in-out border border-black group"
+          class="bg-white py-8 rounded-lg shadow-lg shadow-black/30 flex flex-col justify-center cursor-pointer  duration-300 ease-in-out border border-black group"
         >
           <span class="material-symbols-outlined text-4xl mb-1"> savings </span>
-          <h2 class="text-black group-hover:text-green-500">
+          <h2 class="text-black group-hover:text-green-500 px-2">
             High-yield Savings Rates
           </h2>
         </div>
         <div
-          class="bg-white py-8 rounded-lg shadow-lg shadow-black/30 flex flex-col justify-center cursor-pointer hover:scale-105 duration-300 ease-in-out border border-black group"
+          class="bg-white py-8 rounded-lg shadow-lg shadow-black/30 flex flex-col justify-center cursor-pointer  duration-300 ease-in-out border border-black group"
         >
           <span class="material-symbols-outlined text-4xl mb-1">
             monitoring
           </span>
-          <h2 class="text-black group-hover:text-green-500">
+          <h2 class="text-black group-hover:text-green-500 px-2">
             Money Market Rates
           </h2>
         </div>
         <div
-          class="bg-white py-8 rounded-lg shadow-lg shadow-black/30 flex flex-col justify-center cursor-pointer hover:scale-105 duration-300 ease-in-out border border-black group"
+          class="bg-white py-8 rounded-lg shadow-lg shadow-black/30 flex flex-col justify-center cursor-pointer  duration-300 ease-in-out border border-black group"
         >
           <span class="material-symbols-outlined text-4xl mb-1"> money </span>
-          <h2 class="text-black group-hover:text-green-500">Checking Rates</h2>
+          <h2 class="text-black group-hover:text-green-500 px-2">Checking Rates</h2>
         </div>
         <div
-          class="bg-white py-8 rounded-lg shadow-lg shadow-black/30 flex flex-col justify-center cursor-pointer hover:scale-105 duration-300 ease-in-out border border-black group"
+          class="bg-white py-8 rounded-lg shadow-lg shadow-black/30 flex flex-col justify-center cursor-pointer  duration-300 ease-in-out border border-black group"
         >
           <span class="material-symbols-outlined text-4xl mb-1">
             account_balance
           </span>
-          <h2 class="text-black group-hover:text-green-500">Bank Reviews</h2>
+          <h2 class="text-black group-hover:text-green-500 px-2">Bank Reviews</h2>
         </div>
       </div>
     </div>
@@ -78,7 +78,7 @@
         <h3 class="font-semibold text-2xl md:text-3xl text-left pl-4">
           Explore banking basics
         </h3>
-        <div class="grid grid-cols-1 md:grid-cols-3 mt-8 px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-4 mt-8 px-4">
           <div class="">
             <img
               class="w-full h-auto rounded-lg"
@@ -101,7 +101,7 @@
               </span>
             </a>
           </div>
-          <div class="mt-8">
+          <div class="mt-8 md:mt-0">
             <img
               class="w-full h-auto rounded-lg"
               src="https://picsum.photos/200/150"
@@ -124,7 +124,7 @@
             </a>
           </div>
 
-          <div class="my-8">
+          <div class="my-8 md:mt-0">
             <img
               class="w-full h-auto rounded-lg"
               src="https://picsum.photos/200/150"
@@ -151,9 +151,9 @@
     </div>
 
     <!--------------- Find More Resources ---------------->
-    <div class="w-full bg-green-50 pt-8 pb-6 text-center">
+    <div class="w-full bg-emerald-100 pt-8 pb-6 text-center">
       <h4 class="font-bold text-lg md:text-xl mb-4">Find more resources</h4>
-      <div class="flex gap-4 px-2 overflow-x-scroll pb-2 place-items-center">
+      <div class="flex gap-4 px-2 overflow-x-scroll scroll-smooth pb-2 place-items-center justify-center">
         <div
           class="bg-white border border-black/10 rounded-full py-3 px-5 font-semibold text-sm md:text-base"
         >
@@ -188,7 +188,7 @@
         <h3 class="font-semibold text-2xl md:text-3xl text-left pl-4">
           Editor's picks
         </h3>
-        <div class="grid grid-cols-1 md:grid-cols-3 mt-8 px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-4 mt-8 px-4">
           <div class="shadow-md shadow-black/30 rounded-lg">
             <img
               class="w-full h-auto rounded-t-lg"
@@ -202,7 +202,7 @@
             </p>
           </div>
 
-          <div class="shadow-md shadow-black/30 rounded-lg mt-8">
+          <div class="shadow-md shadow-black/30 rounded-lg mt-8 md:mt-0">
             <img
               class="w-full h-auto rounded-t-lg"
               src="https://picsum.photos/200/150"
@@ -215,7 +215,7 @@
             </p>
           </div>
 
-          <div class="shadow-md shadow-black/30 rounded-lg mt-8">
+          <div class="shadow-md shadow-black/30 rounded-lg mt-8 md:mt-0">
             <img
               class="w-full h-auto rounded-t-lg"
               src="https://picsum.photos/200/150"
@@ -228,6 +228,177 @@
             </p>
           </div>
         </div>
+      </div>
+    </div>
+
+    <!------------------ Latest Articles -------------->
+    <div class="bg-green-100 w-full mt-20 pt-12 text-center">
+      <h3 class="font-semibold text-3xl">Latest articles</h3>
+      <div
+        class="flex gap-4 px-4 overflow-x-auto pb-4 mt-6 place-items-center justify-center text-green-500"
+      >
+        <button
+          class="bg-white border focus:bg-emerald-300/10 border-green-500/30 hover:border-green-500 rounded-md py-2 px-4 md:text-lg transition-all duration-300 ease-in-out"
+        >
+          All
+        </button>
+        <button
+          class="bg-white border focus:bg-emerald-300/10 border-green-500/30 hover:border-green-500 rounded-md py-2 px-4 md:text-lg transition-all duration-300 ease-in-out"
+        >
+          Savings
+        </button>
+        <button
+          class="bg-white border focus:bg-emerald-300/10 border-green-500/30 hover:border-green-500 rounded-md py-2 px-4 md:text-lg transition-all duration-300 ease-in-out"
+        >
+          CDs
+        </button>
+        <button
+          class="bg-white border focus:bg-emerald-300/10 border-green-500/30 hover:border-green-500 rounded-md py-2 px-4 md:text-lg transition-all duration-300 ease-in-out"
+        >
+          MMAs
+        </button>
+        <button
+          class="bg-white border focus:bg-emerald-300/10 border-green-500/30 hover:border-green-500 rounded-md py-2 px-4 md:text-lg transition-all duration-300 ease-in-out"
+        >
+          Checking
+        </button>
+      </div>
+
+
+      <!-- Grid of Latest Articles -->
+      <div
+        class="grid grid-cols-2 md:grid-cols-4 gap-4 pb-12 px-4 md:px-8 text-left"
+      >
+        <div class="bg-white rounded-xl mt-8 group hover:shadow-lg shadow-black/50 transition-shadow duration-300 ease-in-out">
+          <img
+            class="w-full h-auto rounded-xl px-2 pt-2"
+            src="https://picsum.photos/200/150"
+          />
+          <h5 class="px-4 mt-3 font-semibold text-lg group-hover:text-green-500 transition-colors duration-300 ease-in-out">
+            Current CD rates for January 2025
+          </h5>
+          <p class="px-4 text-neutral-800">
+            Check out the latest CD rates from MoneyMindset's weekly survey of
+            bank...
+          </p>
+          <p class="text-neutral-700 mt-2 mb-4 px-4 text-xs font-medium">
+            Jan 03, 2025
+          </p>
+        </div>
+        <div class="bg-white rounded-xl mt-8 group hover:shadow-lg shadow-black/50 transition-shadow duration-300 ease-in-out">
+          <img
+            class="w-full h-auto rounded-xl px-2 pt-2"
+            src="https://picsum.photos/200/150"
+          />
+          <h5 class="px-4 mt-3 font-semibold text-lg group-hover:text-green-500 transition-colors duration-300 ease-in-out">
+            Current CD rates for January 2025
+          </h5>
+          <p class="px-4 text-neutral-800">
+            Check out the latest CD rates from MoneyMindset's weekly survey of
+            bank...
+          </p>
+          <p class="text-neutral-700 mt-2 mb-4 px-4 text-xs font-medium">
+            Jan 03, 2025
+          </p>
+        </div>
+        <div class="bg-white rounded-xl mt-8 group hover:shadow-lg shadow-black/50 transition-shadow duration-300 ease-in-out">
+          <img
+            class="w-full h-auto rounded-xl px-2 pt-2"
+            src="https://picsum.photos/200/150"
+          />
+          <h5 class="px-4 mt-3 font-semibold text-lg group-hover:text-green-500 transition-colors duration-300 ease-in-out">
+            Current CD rates for January 2025
+          </h5>
+          <p class="px-4 text-neutral-800">
+            Check out the latest CD rates from MoneyMindset's weekly survey of
+            bank...
+          </p>
+          <p class="text-neutral-700 mt-2 mb-4 px-4 text-xs font-medium">
+            Jan 03, 2025
+          </p>
+        </div>
+        <div class="bg-white rounded-xl mt-8 group hover:shadow-lg shadow-black/50 transition-shadow duration-300 ease-in-out">
+          <img
+            class="w-full h-auto rounded-xl px-2 pt-2"
+            src="https://picsum.photos/200/150"
+          />
+          <h5 class="px-4 mt-3 font-semibold text-lg group-hover:text-green-500 transition-colors duration-300 ease-in-out">
+            Current CD rates for January 2025
+          </h5>
+          <p class="px-4 text-neutral-800">
+            Check out the latest CD rates from MoneyMindset's weekly survey of
+            bank...
+          </p>
+          <p class="text-neutral-700 mt-2 mb-4 px-4 text-xs font-medium">
+            Jan 03, 2025
+          </p>
+        </div>
+        <div class="bg-white rounded-xl mt-8 group hover:shadow-lg shadow-black/50 transition-shadow duration-300 ease-in-out">
+          <img
+            class="w-full h-auto rounded-xl px-2 pt-2"
+            src="https://picsum.photos/200/150"
+          />
+          <h5 class="px-4 mt-3 font-semibold text-lg group-hover:text-green-500 transition-colors duration-300 ease-in-out">
+            Current CD rates for January 2025
+          </h5>
+          <p class="px-4 text-neutral-800">
+            Check out the latest CD rates from MoneyMindset's weekly survey of
+            bank...
+          </p>
+          <p class="text-neutral-700 mt-2 mb-4 px-4 text-xs font-medium">
+            Jan 03, 2025
+          </p>
+        </div>
+        <div class="bg-white rounded-xl mt-8 group hover:shadow-lg shadow-black/50 transition-shadow duration-300 ease-in-out">
+          <img
+            class="w-full h-auto rounded-xl px-2 pt-2"
+            src="https://picsum.photos/200/150"
+          />
+          <h5 class="px-4 mt-3 font-semibold text-lg group-hover:text-green-500 transition-colors duration-300 ease-in-out">
+            Current CD rates for January 2025
+          </h5>
+          <p class="px-4 text-neutral-800">
+            Check out the latest CD rates from MoneyMindset's weekly survey of
+            bank...
+          </p>
+          <p class="text-neutral-700 mt-2 mb-4 px-4 text-xs font-medium">
+            Jan 03, 2025
+          </p>
+        </div>
+        <div class="bg-white rounded-xl mt-8 group hover:shadow-lg shadow-black/50 transition-shadow duration-300 ease-in-out">
+          <img
+            class="w-full h-auto rounded-xl px-2 pt-2"
+            src="https://picsum.photos/200/150"
+          />
+          <h5 class="px-4 mt-3 font-semibold text-lg group-hover:text-green-500 transition-colors duration-300 ease-in-out">
+            Current CD rates for January 2025
+          </h5>
+          <p class="px-4 text-neutral-800">
+            Check out the latest CD rates from MoneyMindset's weekly survey of
+            bank...
+          </p>
+          <p class="text-neutral-700 mt-2 mb-4 px-4 text-xs font-medium">
+            Jan 03, 2025
+          </p>
+        </div>
+        <div class="bg-white rounded-xl mt-8 group hover:shadow-lg shadow-black/50 transition-shadow duration-300 ease-in-out">
+          <img
+            class="w-full h-auto rounded-xl px-2 pt-2"
+            src="https://picsum.photos/200/150"
+          />
+          <h5 class="px-4 mt-3 font-semibold text-lg group-hover:text-green-500 transition-colors duration-300 ease-in-out">
+            Current CD rates for January 2025
+          </h5>
+          <p class="px-4 text-neutral-800">
+            Check out the latest CD rates from MoneyMindset's weekly survey of
+            bank...
+          </p>
+          <p class="text-neutral-700 mt-2 mb-4 px-4 text-xs font-medium">
+            Jan 03, 2025
+          </p>
+        </div>
+
+        
       </div>
     </div>
   </div>
