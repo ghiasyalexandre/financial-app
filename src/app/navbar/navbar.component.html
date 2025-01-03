@@ -66,19 +66,97 @@
   </ul>
 
   <!-- Mobile Friendly -->
-  <div
-    class="not-sr-only md:sr-only flex justify-between pl-6 pr-4 place-items-center h-full font-medium text-white"
-  >
+  <div class="not-sr-only md:sr-only flex justify-between pl-6 pr-4 place-items-center h-full font-medium text-white">
     <a routerLink="/" draggable="false">
       <img draggable="false" class="h-12 w-12 invert" src="./mm.svg" />
     </a>
     <div class="flex gap-4">
-      <span class="material-symbols-outlined">
-        search
-        </span>      <div>
-          <span class="material-symbols-outlined">
-            menu
-            </span>      </div>
-    </div>
+      <!-- Search icon that toggles to "X" -->
+      <span
+        class="material-symbols-outlined cursor-pointer"
+        (click)="toggleSearch()"
+      >
+        {{ searchVisible ? 'close' : 'search' }}
+      </span>
+ <!-- Menu icon that toggles the side nav visibility -->
+ <span
+ class="material-symbols-outlined cursor-pointer"
+ (click)="toggleMenu()"
+>
+ {{ menuVisible ? 'close' : 'menu' }}
+</span>    </div>
   </div>
+  
+  <!-- Search bar that is shown/hidden based on searchVisible flag -->
+  <div *ngIf="searchVisible" class=" absolute top-4 left-1/4 bg-white text-black w-1/2 rounded-lg md:sr-only">
+    <input type="text" placeholder="Search..." class="w-full p-2 border border-gray-300 rounded-lg" />
+  </div>
+
+<!-- Side Nav that is shown/hidden based on menuVisible flag -->
+<div *ngIf="menuVisible" class="side-nav fixed top-0 left-0 w-64 h-full bg-gray-800 text-white z-50 pl-6 p-4 md:sr-only">
+  <div class="flex justify-between items-center">
+    <a routerLink="/" draggable="false">
+      <img draggable="false" class="h-12 w-12 invert" src="./mm.svg" />
+    </a>    <span class="material-symbols-outlined cursor-pointer" (click)="toggleMenu()">close</span>
+  </div>
+  <ul class="mt-6 flex flex-col gap-2">
+    <li class="group">
+      <a class="relative group" routerLink="/banking" draggable="false"
+        >Banking
+        <span
+          class="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-500 transition-all group-hover:w-full"
+        ></span>
+      </a>
+    </li>
+    <li class="group">
+      <a class="relative group" routerLink="/mortgages" draggable="false"
+        >Mortgages
+        <span
+          class="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-500 transition-all group-hover:w-full"
+        ></span>
+      </a>
+    </li>
+    <li class="group">
+      <a class="relative group" routerLink="/investing" draggable="false"
+        >Investing
+        <span
+          class="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-500 transition-all group-hover:w-full"
+        ></span>
+      </a>
+    </li>
+    <li class="group">
+      <a class="relative group" routerLink="/credit-cards" draggable="false"
+        >Credit Cards
+        <span
+          class="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-500 transition-all group-hover:w-full"
+        ></span>
+      </a>
+    </li>
+    <li class="group">
+      <a class="relative group" routerLink="/loans" draggable="false"
+        >Loans
+        <span
+          class="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-500 transition-all group-hover:w-full"
+        ></span>
+      </a>
+    </li>
+    <li class="group">
+      <a class="relative group" routerLink="/home-equity" draggable="false"
+        >Home Equity
+        <span
+          class="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-500 transition-all group-hover:w-full"
+        ></span>
+      </a>
+    </li>
+    <li class="group">
+      <a class="relative group" routerLink="/insurance" draggable="false"
+        >Insurance
+        <span
+          class="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-500 transition-all group-hover:w-full"
+        ></span>
+      </a>
+    </li>
+  </ul>
+</div>
+  
 </nav>
