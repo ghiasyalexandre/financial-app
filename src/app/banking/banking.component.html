@@ -1,1 +1,234 @@
-<p>banking works!</p>
+<section>
+  <div>
+    <!---------------- Bg Color ----------------->
+    <div
+      class="text-center pb-8 bg-gradient-to-b from-emerald-600 via-emerald-500 to-green-500 w-full"
+    >
+      <!-------- Alert Bar ----------->
+      <div
+        *ngIf="isAlertVisible"
+        class="w-full h-16 flex gap-2 place-items-center text-white bg-gradient-to-br from-emerald-600 via-emerald-500 to-green-500"
+      >
+        <p class="pl-4 font-semibold text-left">
+          Looking to level up your banking? Check out our picks for the best
+          banks of 2025.
+        </p>
+        <button class="pr-4 font-semibold" (click)="hideAlert()">X</button>
+      </div>
+
+      <!---------------- Home Title ----------------->
+      <div class="text-white font-medium">
+        <h1 class="text-4xl pt-8 md:pt-10 mb-6 mx-4 md:mx-8 font-semibold">
+          Banking
+        </h1>
+        <p class="mx-4 md:mx-8 font-semibold text-sm">
+          From savings account details to bank reviews, economic insights and
+          more — Bankrate offers valuable information and advice for you.
+        </p>
+      </div>
+
+      <!---------------- Grid Boxes ----------------->
+      <div
+        class="grid grid-cols-1 lg:grid-cols-3 mt-10 mx-4 md:mx-8 gap-4 md:gap-8 font-semibold text-lg"
+      >
+        <div
+          class="bg-white py-8 rounded-lg shadow-lg shadow-black/30 flex flex-col justify-center cursor-pointer hover:scale-105 duration-300 ease-in-out border border-black group"
+        >
+          <span class="material-symbols-outlined text-4xl mb-1"> ward </span>
+          <h2 class="text-black group-hover:text-green-500">Best CD Rates</h2>
+        </div>
+        <div
+          class="bg-white py-8 rounded-lg shadow-lg shadow-black/30 flex flex-col justify-center cursor-pointer hover:scale-105 duration-300 ease-in-out border border-black group"
+        >
+          <span class="material-symbols-outlined text-4xl mb-1"> savings </span>
+          <h2 class="text-black group-hover:text-green-500">
+            High-yield Savings Rates
+          </h2>
+        </div>
+        <div
+          class="bg-white py-8 rounded-lg shadow-lg shadow-black/30 flex flex-col justify-center cursor-pointer hover:scale-105 duration-300 ease-in-out border border-black group"
+        >
+          <span class="material-symbols-outlined text-4xl mb-1">
+            monitoring
+          </span>
+          <h2 class="text-black group-hover:text-green-500">
+            Money Market Rates
+          </h2>
+        </div>
+        <div
+          class="bg-white py-8 rounded-lg shadow-lg shadow-black/30 flex flex-col justify-center cursor-pointer hover:scale-105 duration-300 ease-in-out border border-black group"
+        >
+          <span class="material-symbols-outlined text-4xl mb-1"> money </span>
+          <h2 class="text-black group-hover:text-green-500">Checking Rates</h2>
+        </div>
+        <div
+          class="bg-white py-8 rounded-lg shadow-lg shadow-black/30 flex flex-col justify-center cursor-pointer hover:scale-105 duration-300 ease-in-out border border-black group"
+        >
+          <span class="material-symbols-outlined text-4xl mb-1">
+            account_balance
+          </span>
+          <h2 class="text-black group-hover:text-green-500">Bank Reviews</h2>
+        </div>
+      </div>
+    </div>
+
+    <!---------------- Explore Banking Articles -------------->
+    <div class="w-full">
+      <div class="pt-8">
+        <h3 class="font-semibold text-2xl md:text-3xl text-left pl-4">
+          Explore banking basics
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 mt-8 px-4">
+          <div class="">
+            <img
+              class="w-full h-auto rounded-lg"
+              src="https://picsum.photos/200/150"
+            />
+            <p class="pl-2 mt-2 text-neutral-700 text-sm font-semibold">
+              Banking
+            </p>
+            <h5 class="px-2 font-semibold text-lg">
+              How to open a certificate of deposit (CD)
+            </h5>
+            <p class="text-neutral-700 mt-2 px-2">
+              Everything you need to know about opening an account.
+            </p>
+            <br />
+            <a class="text-green-500 font-semibold mt-2 pl-2 flex"
+              >Read more
+              <span class="material-symbols-outlined flex place-content-center">
+                arrow_right_alt
+              </span>
+            </a>
+          </div>
+          <div class="mt-8">
+            <img
+              class="w-full h-auto rounded-lg"
+              src="https://picsum.photos/200/150"
+            />
+            <p class="pl-2 mt-2 text-neutral-700 text-sm font-semibold">
+              Banking
+            </p>
+            <h5 class="px-2 font-semibold text-lg">
+              How to open a certificate of deposit (CD)
+            </h5>
+            <p class="text-neutral-700 mt-2 px-2">
+              Everything you need to know about opening an account.
+            </p>
+            <br />
+            <a class="text-green-500 font-semibold mt-2 pl-2 flex"
+              >Read more
+              <span class="material-symbols-outlined flex place-content-center">
+                arrow_right_alt
+              </span>
+            </a>
+          </div>
+
+          <div class="my-8">
+            <img
+              class="w-full h-auto rounded-lg"
+              src="https://picsum.photos/200/150"
+            />
+            <p class="pl-2 mt-2 text-neutral-700 text-sm font-semibold">
+              Banking
+            </p>
+            <h5 class="px-2 font-semibold text-lg">
+              How to open a certificate of deposit (CD)
+            </h5>
+            <p class="text-neutral-700 mt-2 px-2">
+              Everything you need to know about opening an account.
+            </p>
+            <br />
+            <a class="text-green-500 font-semibold mt-2 pl-2 flex"
+              >Read more
+              <span class="material-symbols-outlined flex place-content-center">
+                arrow_right_alt
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--------------- Find More Resources ---------------->
+    <div class="w-full bg-green-50 pt-8 pb-6 text-center">
+      <h4 class="font-bold text-lg md:text-xl mb-4">Find more resources</h4>
+      <div class="flex gap-4 px-2 overflow-x-scroll pb-2 place-items-center">
+        <div
+          class="bg-white border border-black/10 rounded-full py-3 px-5 font-semibold text-sm md:text-base"
+        >
+          CDs
+        </div>
+        <div
+          class="bg-white border min-w-fit border-black/10 rounded-full py-3 px-5 font-semibold text-sm md:text-base"
+        >
+          Savings accounts
+        </div>
+        <div
+          class="bg-white border border-black/10 rounded-full py-3 px-5 font-semibold text-sm md:text-base"
+        >
+          MMAs
+        </div>
+        <div
+          class="bg-white border min-w-fit border-black/10 rounded-full py-3 px-5 font-semibold text-sm md:text-base"
+        >
+          Checking accounts
+        </div>
+        <div
+          class="bg-white border min-w-fit border-black/10 rounded-full py-3 px-5 font-semibold text-sm md:text-base"
+        >
+          Federal reserve
+        </div>
+      </div>
+    </div>
+
+    <!--------------- Editor's Pick ------------------->
+    <div class="w-full">
+      <div class="pt-8">
+        <h3 class="font-semibold text-2xl md:text-3xl text-left pl-4">
+          Editor's picks
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 mt-8 px-4">
+          <div class="shadow-md shadow-black/30 rounded-lg">
+            <img
+              class="w-full h-auto rounded-t-lg"
+              src="https://picsum.photos/200/150"
+            />
+            <h5 class="px-4 mt-3 font-semibold text-lg">
+              Current CD rates for January 2025
+            </h5>
+            <p class="text-neutral-700 mt-2 mb-4 px-4 text-xs font-medium">
+              3 min read
+            </p>
+          </div>
+
+          <div class="shadow-md shadow-black/30 rounded-lg mt-8">
+            <img
+              class="w-full h-auto rounded-t-lg"
+              src="https://picsum.photos/200/150"
+            />
+            <h5 class="px-4 mt-3 font-semibold text-lg">
+              Current CD rates for January 2025
+            </h5>
+            <p class="text-neutral-700 mt-2 mb-4 px-4 text-xs font-medium">
+              3 min read
+            </p>
+          </div>
+
+          <div class="shadow-md shadow-black/30 rounded-lg mt-8">
+            <img
+              class="w-full h-auto rounded-t-lg"
+              src="https://picsum.photos/200/150"
+            />
+            <h5 class="px-4 mt-3 font-semibold text-lg">
+              Current CD rates for January 2025
+            </h5>
+            <p class="text-neutral-700 mt-2 mb-4 px-4 text-xs font-medium">
+              3 min read
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
