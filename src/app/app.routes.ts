@@ -8,6 +8,7 @@ import { LoansComponent } from './loans/loans.component';
 import { HomeequityComponent } from './homeequity/homeequity.component';
 import { InsuranceComponent } from './insurance/insurance.component';
 import { AllCalculatorsComponent } from './all-calculators/all-calculators.component';
+import { ArticleComponent } from './article/article.component';
 
 export const routes: Routes = [
     {
@@ -45,5 +46,9 @@ export const routes: Routes = [
     {
         path: 'all-calculators',
         component: AllCalculatorsComponent,
+    },
+    {
+        path: 'article',
+        component: ArticleComponent,
     },
 ];
