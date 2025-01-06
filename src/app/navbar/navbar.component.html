@@ -8,14 +8,14 @@
       </a>
     </li>
     <li class="group">
-      <a class="relative " routerLink="/banking" draggable="false"
+      <a class="relative" routerLink="/banking" draggable="false"
         >Banking
         <span
           class="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-500 transition-all group-hover:w-full"
         ></span>
       </a>
     </li>
-    <li class="group ">
+    <li class="group">
       <a class="relative" routerLink="/mortgages" draggable="false"
         >Mortgages
         <span
@@ -24,7 +24,7 @@
       </a>
     </li>
     <li class="group">
-      <a class="relative " routerLink="/investing" draggable="false"
+      <a class="relative" routerLink="/investing" draggable="false"
         >Investing
         <span
           class="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-500 transition-all group-hover:w-full"
@@ -32,7 +32,7 @@
       </a>
     </li>
     <li class="group">
-      <a class="relative " routerLink="/credit-cards" draggable="false"
+      <a class="relative" routerLink="/credit-cards" draggable="false"
         >Credit Cards
         <span
           class="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-500 transition-all group-hover:w-full"
@@ -40,7 +40,7 @@
       </a>
     </li>
     <li class="group">
-      <a class="relative " routerLink="/loans" draggable="false"
+      <a class="relative" routerLink="/loans" draggable="false"
         >Loans
         <span
           class="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-500 transition-all group-hover:w-full"
@@ -48,7 +48,7 @@
       </a>
     </li>
     <li class="group">
-      <a class="relative " routerLink="/home-equity" draggable="false"
+      <a class="relative" routerLink="/home-equity" draggable="false"
         >Home Equity
         <span
           class="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-500 transition-all group-hover:w-full"
@@ -56,7 +56,7 @@
       </a>
     </li>
     <li class="group">
-      <a class="relative " routerLink="/insurance" draggable="false"
+      <a class="relative" routerLink="/insurance" draggable="false"
         >Insurance
         <span
           class="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-500 transition-all group-hover:w-full"
@@ -66,81 +66,149 @@
   </ul>
 
   <!-------- Mobile Friendly ------------->
-  <div class="not-sr-only md:sr-only flex justify-between pl-6 pr-4 place-items-center h-full font-medium text-white">
+  <div
+    class="not-sr-only md:sr-only flex justify-between pl-6 pr-4 place-items-center h-full font-medium text-white"
+  >
     <a routerLink="/" draggable="false">
       <img draggable="false" class="h-12 w-12 invert" src="./mm.svg" />
     </a>
     <div class="flex gap-4">
       <!-- Search icon that toggles to "X" -->
-      <span class="material-symbols-outlined cursor-pointer opacity-70 hover:opacity-100 transition-opacity duration-300 ease-in-out " (click)="toggleSearch()">
+      <span
+        class="z-30 material-symbols-outlined cursor-pointer opacity-70 hover:opacity-100 transition-opacity duration-300 ease-in-out"
+        (click)="toggleSearch()"
+      >
         {{ searchVisible ? "close" : "search" }}
       </span>
       <!-- Menu icon that toggles the side nav visibility -->
-      <span class="material-symbols-outlined cursor-pointer opacity-70 hover:opacity-100 transition-opacity duration-300 ease-in-out" (click)="toggleMenu()">
+      <span
+        class="z-30 material-symbols-outlined cursor-pointer opacity-70 hover:opacity-100 transition-opacity duration-300 ease-in-out"
+        (click)="toggleMenu()"
+      >
         {{ menuVisible ? "close" : "menu" }}
       </span>
     </div>
   </div>
-  
+
   <!-- Search bar with fade-slide animation -->
-  <div [@slideFadeSearch]="searchVisible ? 'visible' : 'hidden'"
-       class="absolute top-5 left-1/4 bg-white text-black w-1/2 rounded-lg md:sr-only">
-    <input type="text" placeholder="Search..." class="w-full p-2 border border-gray-300 rounded-lg" />
+  <div
+    [@slideFadeSearch]="searchVisible ? 'visible' : 'hidden'"
+    class="absolute top-5 left-1/4 bg-white text-black w-1/2 rounded-lg md:sr-only"
+  >
+    <input
+      type="text"
+      placeholder="Search..."
+      class="w-full p-2 border border-gray-300 rounded-lg"
+    />
   </div>
-  
+
   <!-- Side Nav with slide and fade effect -->
-  <div [@slideFade]="menuVisible ? 'visible' : 'hidden'"
-       class="side-nav fixed top-0 right-0 w-full h-fit bg-gray-800 text-white z-50 pl-6 p-4 md:sr-only">
+  <div
+    [@slideFade]="menuVisible ? 'visible' : 'hidden'"
+    class="side-nav fixed top-0 right-0 w-full h-fit bg-gray-800 text-white z-50 pl-6 p-4 md:sr-only"
+  >
     <div class="flex justify-between items-center">
       <a (click)="toggleMenu()" routerLink="/" draggable="false">
         <img draggable="false" class="h-12 w-12" src="./mm-white.svg" />
       </a>
-      <span class="material-symbols-outlined cursor-pointer opacity-70 hover:opacity-100 transition-opacity duration-300 ease-in-out" (click)="toggleMenu()">close</span>
+      <span
+        class="material-symbols-outlined cursor-pointer opacity-70 hover:opacity-100 transition-opacity duration-300 ease-in-out"
+        (click)="toggleMenu()"
+        >close</span
+      >
     </div>
     <ul class="mt-6 flex flex-col gap-2">
       <li class="group">
-        <a (click)="toggleMenu()" class="relative group-hover:ml-1.5 transition-all duration-500 ease-in-out" routerLink="/banking" draggable="false">
+        <a
+          (click)="toggleMenu()"
+          class="relative group-hover:ml-1.5 transition-all duration-500 ease-in-out"
+          routerLink="/banking"
+          draggable="false"
+        >
           Banking
-          <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-500 transition-all group-hover:w-full "></span>
+          <span
+            class="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-500 transition-all group-hover:w-full"
+          ></span>
         </a>
       </li>
       <li class="group">
-        <a (click)="toggleMenu()" class="relative group-hover:ml-1.5 transition-all duration-500 ease-in-out" routerLink="/mortgages" draggable="false">
+        <a
+          (click)="toggleMenu()"
+          class="relative group-hover:ml-1.5 transition-all duration-500 ease-in-out"
+          routerLink="/mortgages"
+          draggable="false"
+        >
           Mortgages
-          <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-500 transition-all group-hover:w-full"></span>
+          <span
+            class="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-500 transition-all group-hover:w-full"
+          ></span>
         </a>
       </li>
       <li class="group">
-        <a (click)="toggleMenu()" class="relative group-hover:ml-1.5 transition-all duration-500 ease-in-out" routerLink="/investing" draggable="false">
+        <a
+          (click)="toggleMenu()"
+          class="relative group-hover:ml-1.5 transition-all duration-500 ease-in-out"
+          routerLink="/investing"
+          draggable="false"
+        >
           Investing
-          <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-500 transition-all group-hover:w-full"></span>
+          <span
+            class="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-500 transition-all group-hover:w-full"
+          ></span>
         </a>
       </li>
       <li class="group">
-        <a (click)="toggleMenu()" class="relative group-hover:ml-1.5 transition-all duration-500 ease-in-out" routerLink="/credit-cards" draggable="false">
+        <a
+          (click)="toggleMenu()"
+          class="relative group-hover:ml-1.5 transition-all duration-500 ease-in-out"
+          routerLink="/credit-cards"
+          draggable="false"
+        >
           Credit Cards
-          <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-500 transition-all group-hover:w-full"></span>
+          <span
+            class="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-500 transition-all group-hover:w-full"
+          ></span>
         </a>
       </li>
       <li class="group">
-        <a (click)="toggleMenu()" class="relative group-hover:ml-1.5 transition-all duration-500 ease-in-out" routerLink="/loans" draggable="false">
+        <a
+          (click)="toggleMenu()"
+          class="relative group-hover:ml-1.5 transition-all duration-500 ease-in-out"
+          routerLink="/loans"
+          draggable="false"
+        >
           Loans
-          <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-500 transition-all group-hover:w-full"></span>
+          <span
+            class="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-500 transition-all group-hover:w-full"
+          ></span>
         </a>
       </li>
       <li class="group">
-        <a (click)="toggleMenu()" class="relative group-hover:ml-1.5 transition-all duration-500 ease-in-out" routerLink="/home-equity" draggable="false">
+        <a
+          (click)="toggleMenu()"
+          class="relative group-hover:ml-1.5 transition-all duration-500 ease-in-out"
+          routerLink="/home-equity"
+          draggable="false"
+        >
           Home Equity
-          <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-500 transition-all group-hover:w-full"></span>
+          <span
+            class="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-500 transition-all group-hover:w-full"
+          ></span>
         </a>
       </li>
       <li class="group">
-        <a (click)="toggleMenu()" class="relative group-hover:ml-1.5 transition-all duration-500 ease-in-out" routerLink="/insurance" draggable="false">
+        <a
+          (click)="toggleMenu()"
+          class="relative group-hover:ml-1.5 transition-all duration-500 ease-in-out"
+          routerLink="/insurance"
+          draggable="false"
+        >
           Insurance
-          <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-500 transition-all group-hover:w-full"></span>
+          <span
+            class="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-500 transition-all group-hover:w-full"
+          ></span>
         </a>
       </li>
     </ul>
   </div>
-  
 </nav>
