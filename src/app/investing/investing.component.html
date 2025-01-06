@@ -6,10 +6,11 @@
       >
         <!-------- Alert Bar ----------->
         <div
-          *ngIf="isAlertVisible"
-          class="w-full h-fit py-2 flex gap-4 place-items-center justify-between text-white bg-gradient-to-br from-emerald-600 via-emerald-500 to-green-500"
-        >
-          <a
+        class="w-full h-fit py-2 flex gap-4 place-items-center justify-between text-white bg-gradient-to-br from-emerald-600 via-emerald-500 to-green-500 transition-all duration-300 ease-in-out"
+        [ngClass]="{ 'opacity-0 -my-4': !isAlertVisible, 'opacity-100': isAlertVisible }"      >
+        <a
+        [ngClass]="{ 'cursor-auto': !isAlertVisible, 'cursor-pointer': isAlertVisible }"
+
             class="pl-4 font-semibold text-center hover:underline underline-offset-2 cursor-pointer"
           >
             The MoneyMindset Award winners are here! See our picks for 2025's best.
@@ -24,7 +25,7 @@
           <h1 class="text-4xl pt-8 md:pt-10 mb-6 mx-4 md:mx-8 font-semibold">
             Investing
           </h1>
-          <p class="mx-4 md:mx-8 font-semibold text-sm">
+          <p class="mx-4 md:mx-8 font-semibold text-sm sm:text-base">
             Want to make sure you're on track to meet your investing goals? You've come to the right place. Get news, advice and tools to maximize your investments.
           </p>
         </div>
@@ -87,29 +88,32 @@
   
       <!--------------- Find More Resources ---------------->
       <div class="w-full bg-emerald-100 mt-16 pt-8 pb-6 text-center">
-        <h4 class="font-bold text-lg md:text-xl mb-4">Investing Basics</h4>
-        <div
-          class="flex gap-4 pl-8 pr-4 overflow-x-scroll scroll-smooth pb-2 place-items-center justify-center"
-        >
+        <h4 class="font-bold text-lg md:text-xl mb-4">Explore More</h4>
+        <div class="overflow-x-auto scroll-smooth px-20">
           <div
-            class="bg-white border min-w-fit border-black/10 rounded-full py-3 px-5 font-semibold text-sm md:text-base"
+            class="flex gap-4 pb-4 px-4 place-items-center min-w-fit justify-center"
           >
-            Home improvement
-          </div>
-          <div
-            class="bg-white border min-w-fit border-black/10 rounded-full py-3 px-5 font-semibold text-sm md:text-base"
-          >
-            Debt consolidation
-          </div>
-          <div
-            class="bg-white border min-w-fit border-black/10 rounded-full py-3 px-5 font-semibold text-sm md:text-base"
-          >
-            Emergency loans
-          </div>
-          <div
-            class="bg-white border min-w-fit border-black/10 rounded-full py-3 px-5 font-semibold text-sm md:text-base"
-          >
-            Installment loans
+            <div
+              class="bg-white border min-w-fit border-black/10 hover:border-green-500 hover:text-green-500 rounded-full py-3 px-5 font-semibold text-sm md:text-base"
+            >
+              Home improvement
+            </div>
+            <div
+              class="bg-white border min-w-fit border-black/10 hover:border-green-500 hover:text-green-500 rounded-full py-3 px-5 font-semibold text-sm md:text-base"
+            >
+              Debt consolidation
+            </div>
+            <div
+              class="bg-white border min-w-fit border-black/10 hover:border-green-500 hover:text-green-500 rounded-full py-3 px-5 font-semibold text-sm md:text-base"
+            >
+                Emergency loans
+            </div>
+            <div
+              class="bg-white border min-w-fit border-black/10 hover:border-green-500 hover:text-green-500 rounded-full py-3 px-5 font-semibold text-sm md:text-base"
+            >
+              Installment loans
+            </div>
+
           </div>
         </div>
       </div>

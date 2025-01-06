@@ -6,10 +6,11 @@
     >
       <!-------- Alert Bar ----------->
       <div
-        *ngIf="isAlertVisible"
-        class="w-full h-fit py-2 flex gap-4 place-items-center justify-between text-white bg-gradient-to-br from-emerald-600 via-emerald-500 to-green-500"
-      >
+        class="w-full h-fit py-2 flex gap-4 place-items-center justify-between text-white bg-gradient-to-br from-emerald-600 via-emerald-500 to-green-500 transition-all duration-300 ease-in-out"
+        [ngClass]="{ 'opacity-0 -my-4': !isAlertVisible, 'opacity-100': isAlertVisible }"      >
         <a
+        [ngClass]="{ 'cursor-auto': !isAlertVisible, 'cursor-pointer': isAlertVisible }"
+
           class="pl-4 font-semibold text-center hover:underline underline-offset-2 cursor-pointer"
         >
           Looking for a credit card? See our 2025 MoneyMindset Awards winners.
@@ -26,7 +27,7 @@
         >
           Credit Cards
         </h1>
-        <p class="mx-4 md:mx-8 font-semibold text-sm">
+        <p class="mx-4 md:mx-8 font-semibold text-sm sm:text-base">
           Compare top offers by category. Read our expert reviews and
           recommendations. Feel confident when you apply.
         </p>
@@ -94,32 +95,32 @@
     <!--------------- Explore More ---------------->
     <div class="w-full bg-emerald-100 mt-16 pt-8 pb-6 text-center">
       <h4 class="font-bold text-lg md:text-xl mb-4">Explore more</h4>
-      <div class="overflow-x-scroll scroll-smooth px-4">
+      <div class="overflow-x-auto scroll-smooth px-4">
         <div
           class="flex gap-4 pb-4 px-4 place-items-center min-w-fit justify-center"
         >
           <div
-            class="bg-white border min-w-fit border-black/10 rounded-full py-3 px-5 font-semibold text-sm md:text-base"
+            class="bg-white border min-w-fit border-black/10 hover:border-green-500 hover:text-green-500 rounded-full py-3 px-5 font-semibold text-sm md:text-base"
           >
             Rewards
           </div>
           <div
-            class="bg-white border min-w-fit border-black/10 rounded-full py-3 px-5 font-semibold text-sm md:text-base"
+            class="bg-white border min-w-fit border-black/10 hover:border-green-500 hover:text-green-500 rounded-full py-3 px-5 font-semibold text-sm md:text-base"
           >
             Business
           </div>
           <div
-            class="bg-white border min-w-fit border-black/10 rounded-full py-3 px-5 font-semibold text-sm md:text-base"
+            class="bg-white border min-w-fit border-black/10 hover:border-green-500 hover:text-green-500 rounded-full py-3 px-5 font-semibold text-sm md:text-base"
           >
             Travel
           </div>
           <div
-            class="bg-white border min-w-fit border-black/10 rounded-full py-3 px-5 font-semibold text-sm md:text-base"
+            class="bg-white border min-w-fit border-black/10 hover:border-green-500 hover:text-green-500 rounded-full py-3 px-5 font-semibold text-sm md:text-base"
           >
             Student
           </div>
           <div
-            class="bg-white border min-w-fit border-black/10 rounded-full py-3 px-5 font-semibold text-sm md:text-base"
+            class="bg-white border min-w-fit border-black/10 hover:border-green-500 hover:text-green-500 rounded-full py-3 px-5 font-semibold text-sm md:text-base"
           >
             No annual fee
           </div>
