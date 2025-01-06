@@ -7,7 +7,9 @@
 
     <!---------------- Home Title ----------------->
     <div class="text-white font-medium">
-      <h1 class="text-4xl pt-4 md:pt-10 mb-4 mx-4 md:mx-8 font-semibold">
+      <h1
+        class="text-4xl md:text-5xl pt-4 md:pt-10 mb-4 mx-4 md:mx-8 font-semibold"
+      >
         Healthier Wallet, Happier You
       </h1>
       <p class="mx-4 md:mx-8 font-semibold text-pretty sm:text-base">
@@ -53,10 +55,8 @@
       <div
         class="bg-white py-8 rounded-lg shadow-lg shadow-black/30 flex flex-col justify-center cursor-pointer hover:scale-105 duration-300 ease-in-out border border-black group"
       >
-        <span class="material-symbols-outlined text-4xl mb-1">
-          real_estate_agent
-        </span>
-        <h2 class="text-black group-hover:text-green-500">Home equity</h2>
+        <span class="material-symbols-outlined text-4xl mb-1"> calculate </span>
+        <h2 class="text-black group-hover:text-green-500">All Calculators</h2>
       </div>
       <div
         class="bg-white py-8 rounded-lg shadow-lg shadow-black/30 flex flex-col justify-center cursor-pointer hover:scale-105 duration-300 ease-in-out border border-black group"
@@ -88,18 +88,20 @@
     <div
       class="flex flex-col place-items-center bg-gradient-to-tr from-emerald-600 via-emerald-500 to-green-500 py-8 px-8 shadow-lg shadow-black/30 md:rounded-tl-[4rem] md:rounded-br-[4rem]"
     >
-    <div
-    class="bg-black/70 py-1.5 px-4 max-w-fit font-medium flex justify-self-center gap-2 place-items-center rounded-full uppercase"
-  >
-    <span
-      class="material-symbols-outlined text-xl flex place-content-center"
-    >
-      hotel_class
-    </span>
-    <h3>New</h3>
-  </div>
+      <div
+        class="bg-black/70 py-1.5 px-4 max-w-fit font-medium flex justify-self-center gap-2 place-items-center rounded-full uppercase"
+      >
+        <span
+          class="material-symbols-outlined text-xl flex place-content-center"
+        >
+          hotel_class
+        </span>
+        <h3>New</h3>
+      </div>
       <br />
-      <h2 class="text-2xl md:text-3xl mb-4 font-semibold">Our top picks for 2025</h2>
+      <h2 class="text-2xl md:text-3xl mb-4 font-semibold">
+        Our top picks for 2025
+      </h2>
       <p class="font-medium px-4 md:px-32">
         Presenting the 2025 MoneyMindset Awards. Our experts dug into all the
         data to handpick the best of the best for you.
@@ -204,7 +206,9 @@
           <h3>Trends</h3>
         </button>
       </div>
-      <h2 class="text-3xl md:text-4xl font-semibold mt-4">Top mortgage offers</h2>
+      <h2 class="text-3xl md:text-4xl font-semibold mt-4">
+        Top mortgage offers
+      </h2>
       <p class="font-medium mt-4 text-lg">
         Make your dream home a reality with the right mortgage.
       </p>
@@ -284,8 +288,8 @@
           </button>
         </div>
         <p
-        matTooltip="MoneyMindset “top offers” represent the weekly average interest rate and average of APRs among top offers featured on MoneyMindset for the loan type and term selected, as of January 2, 2025."
-        matTooltipPosition="below"
+          matTooltip="MoneyMindset “top offers” represent the weekly average interest rate and average of APRs among top offers featured on MoneyMindset for the loan type and term selected, as of January 2, 2025."
+          matTooltipPosition="below"
           class="text-center text-xs mt-2 underline underline-offset-2 cursor-pointer"
         >
           How are these rates calculated?
@@ -414,69 +418,87 @@
       class="bg-gradient-to-tr from-emerald-600 via-emerald-500 to-green-500 pb-16 pt-8 px-16 shadow-lg shadow-black/30 md:rounded-tl-[4rem] md:rounded-br-[4rem]"
     >
       <br />
-      <h2 class="text-2xl md:text-3xl mb-8 font-semibold">Calculators for every question</h2>
+      <h2 class="text-2xl md:text-3xl mb-8 font-semibold">
+        Calculators for every question
+      </h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-        <div
-          class="flex gap-3 place-items-center group hover:text-green-500 fill-current hover:bg-white bg-white/20 shadow-md shadow-black/30 pl-4 py-3 rounded-lg transition-all ease-in-out duration-300"
-        >
-          <span
-            class="material-symbols-outlined text-4xl md:text-5xl flex place-content-center"
+        <a routerLink="/all-calculators" class="cursor-pointer">
+          <div
+            class="flex gap-3 place-items-center group hover:text-green-500 fill-current hover:bg-white bg-white/20 shadow-md shadow-black/30 pl-4 py-3 rounded-lg transition-all ease-in-out duration-300"
           >
-            monitoring
-          </span>
-          <p class="font-semibold text-lg md:text-xl">Savings calculator</p>
-        </div>
-        <div
-          class="flex gap-3 place-items-center group hover:text-green-500 fill-current hover:bg-white bg-white/20 shadow-md shadow-black/30 pl-4 py-3 rounded-lg transition-all ease-in-out duration-300"
-        >
-          <span
-            class="material-symbols-outlined text-4xl md:text-5xl flex place-content-center"
+            <span
+              class="material-symbols-outlined text-4xl md:text-5xl flex place-content-center"
+            >
+              monitoring
+            </span>
+            <p class="font-semibold text-lg md:text-xl">Savings calculator</p>
+          </div>
+        </a>
+
+        <a routerLink="/all-calculators" class="cursor-pointer">
+          <div
+            class="flex gap-3 place-items-center group hover:text-green-500 fill-current hover:bg-white bg-white/20 shadow-md shadow-black/30 pl-4 py-3 rounded-lg transition-all ease-in-out duration-300"
           >
-            real_estate_agent
-          </span>
-          <p class="font-semibold text-lg md:text-xl">Mortgage calculator</p>
-        </div>
-        <div
-          class="flex gap-3 place-items-center group hover:text-green-500 fill-current hover:bg-white bg-white/20 shadow-md shadow-black/30 pl-4 py-3 rounded-lg transition-all ease-in-out duration-300"
-        >
-          <span
-            class="material-symbols-outlined text-4xl md:text-5xl flex place-content-center"
+            <span
+              class="material-symbols-outlined text-4xl md:text-5xl flex place-content-center"
+            >
+              real_estate_agent
+            </span>
+            <p class="font-semibold text-lg md:text-xl">Mortgage calculator</p>
+          </div>
+        </a>
+
+        <a routerLink="/all-calculators" class="cursor-pointer">
+          <div
+            class="flex gap-3 place-items-center group hover:text-green-500 fill-current hover:bg-white bg-white/20 shadow-md shadow-black/30 pl-4 py-3 rounded-lg transition-all ease-in-out duration-300"
           >
-            payments
-          </span>
-          <p class="font-semibold text-lg md:text-xl">Loan calculator</p>
-        </div>
-        <div
-          class="flex gap-3 place-items-center group hover:text-green-500 fill-current hover:bg-white bg-white/20 shadow-md shadow-black/30 pl-4 py-3 rounded-lg transition-all ease-in-out duration-300"
-        >
-          <span
-            class="material-symbols-outlined text-4xl md:text-5xl flex place-content-center"
+            <span
+              class="material-symbols-outlined text-4xl md:text-5xl flex place-content-center"
+            >
+              payments
+            </span>
+            <p class="font-semibold text-lg md:text-xl">Loan calculator</p>
+          </div>
+        </a>
+
+        <a routerLink="/all-calculators" class="cursor-pointer">
+          <div
+            class="flex gap-3 place-items-center group hover:text-green-500 fill-current hover:bg-white bg-white/20 shadow-md shadow-black/30 pl-4 py-3 rounded-lg transition-all ease-in-out duration-300"
           >
-            credit_card
-          </span>
-          <p class="font-semibold text-lg md:text-xl">Credit card payoff</p>
-        </div>
-        <div
-          class="flex gap-3 place-items-center group hover:text-green-500 fill-current hover:bg-white bg-white/20 shadow-md shadow-black/30 pl-4 py-3 rounded-lg transition-all ease-in-out duration-300"
-        >
-          <span
-            class="material-symbols-outlined text-4xl md:text-5xl flex place-content-center"
+            <span
+              class="material-symbols-outlined text-4xl md:text-5xl flex place-content-center"
+            >
+              credit_card
+            </span>
+            <p class="font-semibold text-lg md:text-xl">Credit card payoff</p>
+          </div>
+        </a>
+
+        <a routerLink="/all-calculators" class="cursor-pointer">
+          <div
+            class="flex gap-3 place-items-center group hover:text-green-500 fill-current hover:bg-white bg-white/20 shadow-md shadow-black/30 pl-4 py-3 rounded-lg transition-all ease-in-out duration-300"
           >
-            editor_choice
-          </span>
-          <p class="font-semibold text-lg md:text-xl">CD calculator</p>
-        </div>
-        <div
-          class="flex gap-3 place-items-center group hover:text-green-500 fill-current hover:bg-white bg-white/20 shadow-md shadow-black/30 pl-4 py-3 rounded-lg transition-all ease-in-out duration-300"
-        >
-          <span
-            class="material-symbols-outlined text-4xl md:text-5xl flex place-content-center"
+            <span
+              class="material-symbols-outlined text-4xl md:text-5xl flex place-content-center"
+            >
+              editor_choice
+            </span>
+            <p class="font-semibold text-lg md:text-xl">CD calculator</p>
+          </div>
+        </a>
+
+        <a routerLink="/all-calculators" class="cursor-pointer">
+          <div
+            class="flex gap-3 place-items-center group hover:text-green-500 fill-current hover:bg-white bg-white/20 shadow-md shadow-black/30 pl-4 py-3 rounded-lg transition-all ease-in-out duration-300"
           >
-            calculate
-          </span>
-          <p class="font-semibold text-lg md:text-xl">See all calculators</p>
-        </div>
-        
+            <span
+              class="material-symbols-outlined text-4xl md:text-5xl flex place-content-center"
+            >
+              calculate
+            </span>
+            <p class="font-semibold text-lg md:text-xl">See all calculators</p>
+          </div>
+        </a>
       </div>
     </div>
   </div>
