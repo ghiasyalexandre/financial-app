@@ -3,12 +3,12 @@ import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-loans',
+  selector: 'app-loans-calculators',
   imports: [CommonModule, RouterLink],
-  templateUrl: './loans.component.html',
-  styleUrl: './loans.component.scss'
+  templateUrl: './loans-calculators.component.html',
+  styleUrl: './loans-calculators.component.scss'
 })
-export class LoansComponent {
+export class LoansCalculatorsComponent {
   // Flag to control visibility of the alert bar
   isAlertVisible = true;
 

@@ -1,0 +1,100 @@
+<section>
+  <!-------- Alert Bar ----------->
+  <div
+    class="w-full h-fit py-2 flex gap-4 place-items-center justify-between text-white bg-gradient-to-br from-emerald-600 via-emerald-500 to-green-500 transition-all duration-300 ease-in-out"
+    [ngClass]="{
+      'opacity-0 -my-8': !isAlertVisible,
+      'opacity-100': isAlertVisible
+    }"
+  >
+    <a
+      class="pl-4 font-semibold text-center hover:underline underline-offset-2"
+      [ngClass]="{
+        'cursor-auto': !isAlertVisible,
+        'cursor-pointer': isAlertVisible
+      }"
+    >
+      Make moves toward your financial goals with the best personal loans of
+      2025.
+    </a>
+    <button class="pr-4 font-semibold text-right" (click)="hideAlert()">
+      X
+    </button>
+  </div>
+
+  <!---------------- Home Title ----------------->
+  <div class="text-black font-medium px-4">
+    <div class="flex gap-4 mt-12 text-sm">
+      <a
+        routerLink="/loans"
+        class="text-green-500 hover:underline underline-offset-2 cursor-pointer"
+        >Loans</a
+      >
+      > <a class="text-neutral-600">Loan Calculators</a>
+    </div>
+
+    <!--------------- Page Start ----------------->
+    <h1 class="text-4xl sm:text-5xl pt-8 md:pt-10 mb-6 font-semibold">
+      Loan Calculators
+    </h1>
+    <p class="text-sm">
+      MoneyMindset's loan calculators can help you determine the right type of
+      financing for your needs, calculate monthly payments and pay off debt.
+    </p>
+
+    <h1 class="text-3xl sm:text-4xl pt-8 md:pt-10 font-semibold">
+      General Loan Calculators
+    </h1>
+    <hr class="my-4 border-neutral-300" />
+    <div class="py-4 px-4">
+      <div class="flex flex-col gap-4">
+        <a
+          class="px-4 py-6 cursor-pointer group flex place-items-center shadow-md shadow-black/30 rounded-md hover:border-l-4 border-green-500 transition-all duration-100 ease-in-out"
+        >
+          <p
+            class="group-hover:text-green-500 transition-colors duration-300 ease-in-out font-semibold"
+          >
+            Loan calculator
+          </p>
+          <p class="text-2xl text-green-500 font-bold ml-auto">></p>
+        </a>
+        <a
+          class="px-4 py-6 cursor-pointer group flex place-items-center shadow-md shadow-black/30 rounded-md hover:border-l-4 border-green-500 transition-all duration-100 ease-in-out"
+        >
+          <p
+            class="group-hover:text-green-500 transition-colors duration-300 ease-in-out font-semibold"
+          >
+            Personal loan calculator
+          </p>
+          <p class="text-2xl text-green-500 font-bold ml-auto">></p>
+        </a>
+        <a
+          class="px-4 py-6 cursor-pointer group flex place-items-center shadow-md shadow-black/30 rounded-md hover:border-l-4 border-green-500 transition-all duration-100 ease-in-out"
+        >
+          <p
+            class="group-hover:text-green-500 transition-colors duration-300 ease-in-out font-semibold"
+          >
+            Business loan calculator
+          </p>
+          <p class="text-2xl text-green-500 font-bold ml-auto">></p>
+        </a>
+        <a
+          class="px-4 py-6 cursor-pointer group flex place-items-center shadow-md shadow-black/30 rounded-md hover:border-l-4 border-green-500 transition-all duration-100 ease-in-out"
+        >
+          <p
+            class="group-hover:text-green-500 transition-colors duration-300 ease-in-out font-semibold"
+          >
+            Annual percentage rate calculator
+          </p>
+          <p class="text-2xl text-green-500 font-bold ml-auto">></p>
+        </a>
+      </div>
+    </div>
+    
+</div>
+<button
+  class="ml-4 my-12 rounded px-6 py-2 text-center border-2 border-green-500 hover:bg-green-50 text-green-500 cursor-pointer transition-all duration-300 ease-in-out font-semibold"
+>
+  Today's Personal Loan Rates
+</button>
+</section>

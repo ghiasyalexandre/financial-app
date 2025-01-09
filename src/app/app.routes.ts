@@ -9,6 +9,7 @@ import { HomeequityComponent } from './homeequity/homeequity.component';
 import { InsuranceComponent } from './insurance/insurance.component';
 import { AllCalculatorsComponent } from './all-calculators/all-calculators.component';
 import { ArticleComponent } from './article/article.component';
+import { LoansCalculatorsComponent } from './loans-calculators/loans-calculators.component';
 
 export const routes: Routes = [
     {
@@ -34,6 +35,10 @@ export const routes: Routes = [
     {
         path: 'loans',
         component: LoansComponent,
+    },
+    {
+        path: 'loans/calculators',
+        component: LoansCalculatorsComponent,
     },
     {
         path: 'home-equity',
