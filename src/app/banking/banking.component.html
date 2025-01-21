@@ -7,9 +7,14 @@
       <!-------- Alert Bar ----------->
       <div
         class="w-full h-fit py-2 flex gap-4 place-items-center justify-between text-white bg-gradient-to-br from-emerald-600 via-emerald-500 to-green-500 transition-all duration-300 ease-in-out"
-        [ngClass]="{ 'opacity-0 -my-8': !isAlertVisible, 'opacity-100': isAlertVisible }"      >
-        
-        <p class="pl-4 font-semibold text-left">
+        [ngClass]="{
+          'opacity-0 -my-12 sm:-my-8': !isAlertVisible,
+          'opacity-100': isAlertVisible
+        }"
+      >
+        <div></div>
+
+        <p class="pl-4 font-semibold text-center">
           Looking to level up your banking? Check out our picks for the best
           banks of 2025.
         </p>
@@ -20,7 +25,9 @@
 
       <!---------------- Home Title ----------------->
       <div class="text-white font-medium">
-        <h1 class="text-4xl sm:text-5xl pt-8 md:pt-10 mb-6 mx-4 md:mx-8 font-semibold">
+        <h1
+          class="text-4xl sm:text-5xl pt-8 md:pt-10 mb-6 mx-4 md:mx-8 font-semibold"
+        >
           Banking
         </h1>
         <p class="mx-4 md:mx-8 font-semibold text-sm sm:text-base">
@@ -89,134 +96,139 @@
           Explore banking basics
         </h3>
         <div
-          class="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 xs:gap-x-4 mt-8 px-4 mb-8"
-        >
-        <div
-        class="group cursor-pointer min-h-[365px] sm:min-h-100 active:border-2 p-4 rounded-lg border-green-500 overflow-y-clip"
-      >
-        <div
-          class="relative h-48 group-hover:h-40 transition-all duration-300 ease-in-out"
-        >
-          <img
-            class="w-full h-48 group-hover:h-40 absolute object-cover rounded-lg aspect-auto transition-all duration-300 ease-in-out"
-            src="https://picsum.photos/200/150"
-          />
-        </div>
-        <p class="pl-2 mt-2 tracking-wider text-neutral-700 text-sm font-semibold">
-          Banking
-        </p>
-        <h5 class="px-2 font-semibold text-lg">
-          How to open a certificate of deposit (CD)
-        </h5>
-        <p class="text-neutral-700 mt-2 px-2 text-sm">
-          Everything you need to know about opening an account.
-        </p>
-        <a
-          class="text-green-500 font-semibold mt-6 pl-2 flex translate-y-24 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 ease-in-out"
-          >Read more
-          <span
-            class="material-symbols-outlined group-hover:pl-1.5 flex place-content-center transition-all duration-500 ease-in-out"
-          >
-            arrow_right_alt
-          </span>
-        </a>
-      </div>
-      <div
-      class="group cursor-pointer min-h-[365px] sm:min-h-100 active:border-2 p-4 rounded-lg border-green-500 overflow-y-clip"
-    >
-      <div
-        class="relative h-48 group-hover:h-40 transition-all duration-300 ease-in-out"
-      >
-        <img
-          class="w-full h-48 group-hover:h-40 absolute object-cover rounded-lg aspect-auto transition-all duration-300 ease-in-out"
-          src="https://picsum.photos/200/150"
-        />
-      </div>
-      <p class="pl-2 mt-2 tracking-wider text-neutral-700 text-sm font-semibold">
-        Banking
-      </p>
-      <h5 class="px-2 font-semibold text-lg">
-        How to open a certificate of deposit (CD)
-      </h5>
-      <p class="text-neutral-700 mt-2 px-2 text-sm">
-        Everything you need to know about opening an account.
-      </p>
-      <a
-        class="text-green-500 font-semibold mt-6 pl-2 flex translate-y-24 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 ease-in-out"
-        >Read more
-        <span
-          class="material-symbols-outlined group-hover:pl-1.5 flex place-content-center transition-all duration-500 ease-in-out"
-        >
-          arrow_right_alt
-        </span>
-      </a>
-    </div>
-
-          <div
-          class="group cursor-pointer min-h-[365px] sm:min-h-100 active:border-2 p-4 rounded-lg border-green-500 overflow-y-clip"
+          class="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 xs:gap-x-4 mt-8 px-4"
         >
           <div
-            class="relative h-48 group-hover:h-40 transition-all duration-300 ease-in-out"
+            class="group cursor-pointer min-h-[365px] sm:min-h-100 active:border-2 p-4 rounded-lg border-green-500 overflow-y-clip"
           >
-            <img
-              class="w-full h-48 group-hover:h-40 absolute object-cover rounded-lg aspect-auto transition-all duration-300 ease-in-out"
-              src="https://picsum.photos/200/150"
-            />
-          </div>
-          <p class="pl-2 mt-2 tracking-wider text-neutral-700 text-sm font-semibold">
-            Banking
-          </p>
-          <h5 class="px-2 font-semibold text-lg">
-            How to open a certificate of deposit (CD)
-          </h5>
-          <p class="text-neutral-700 mt-2 px-2 text-sm">
-            Everything you need to know about opening an account.
-          </p>
-          <a
-            class="text-green-500 font-semibold mt-6 pl-2 flex translate-y-24 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 ease-in-out"
-            >Read more
-            <span
-              class="material-symbols-outlined group-hover:pl-1.5 flex place-content-center transition-all duration-500 ease-in-out"
+            <div
+              class="relative h-48 sm:h-64 group-hover:h-40 sm:group-hover:h-52 transition-all duration-300 ease-in-out"
             >
-              arrow_right_alt
-            </span>
-          </a>
-        </div>
+              <img
+                class="w-full h-48 sm:h-64 group-hover:h-40 sm:group-hover:h-52 absolute object-cover rounded-lg aspect-auto transition-all duration-300 ease-in-out"
+                src="https://picsum.photos/200/150"
+              />
+            </div>
+            <p
+              class="pl-2 mt-2 tracking-wider text-neutral-700 text-sm font-semibold"
+            >
+              Banking
+            </p>
+            <h5 class="px-2 font-semibold text-lg">
+              How to open a certificate of deposit (CD)
+            </h5>
+            <p class="text-neutral-700 mt-2 px-2 text-sm">
+              Everything you need to know about opening an account.
+            </p>
+            <a
+              class="text-green-500 font-semibold mt-6 pl-2 flex translate-y-24 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 ease-in-out"
+              >Read more
+              <span
+                class="material-symbols-outlined group-hover:pl-1.5 flex place-content-center transition-all duration-500 ease-in-out"
+              >
+                arrow_right_alt
+              </span>
+            </a>
+          </div>
+          <div
+            class="group cursor-pointer min-h-[365px] sm:min-h-100 active:border-2 p-4 rounded-lg border-green-500 overflow-y-clip"
+          >
+            <div
+              class="relative h-48 sm:h-64 group-hover:h-40 sm:group-hover:h-52 transition-all duration-300 ease-in-out"
+            >
+              <img
+                class="w-full hh-48 sm:h-64 group-hover:h-40 sm:group-hover:h-52 absolute object-cover rounded-lg aspect-auto transition-all duration-300 ease-in-out"
+                src="https://picsum.photos/200/150"
+              />
+            </div>
+            <p
+              class="pl-2 mt-2 tracking-wider text-neutral-700 text-sm font-semibold"
+            >
+              Banking
+            </p>
+            <h5 class="px-2 font-semibold text-lg">
+              How to open a certificate of deposit (CD)
+            </h5>
+            <p class="text-neutral-700 mt-2 px-2 text-sm">
+              Everything you need to know about opening an account.
+            </p>
+            <a
+              class="text-green-500 font-semibold mt-6 pl-2 flex translate-y-24 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 ease-in-out"
+              >Read more
+              <span
+                class="material-symbols-outlined group-hover:pl-1.5 flex place-content-center transition-all duration-500 ease-in-out"
+              >
+                arrow_right_alt
+              </span>
+            </a>
+          </div>
 
+          <div
+            class="group cursor-pointer min-h-[365px] sm:min-h-100 active:border-2 p-4 rounded-lg border-green-500 overflow-y-clip"
+          >
+            <div
+              class="relative h-48 sm:h-64 group-hover:h-40 sm:group-hover:h-52 transition-all duration-300 ease-in-out"
+            >
+              <img
+                class="w-full h-48 sm:h-64 group-hover:h-40 sm:group-hover:h-52 absolute object-cover rounded-lg aspect-auto transition-all duration-300 ease-in-out"
+                src="https://picsum.photos/200/150"
+              />
+            </div>
+            <p
+              class="pl-2 mt-2 tracking-wider text-neutral-700 text-sm font-semibold"
+            >
+              Banking
+            </p>
+            <h5 class="px-2 font-semibold text-lg">
+              How to open a certificate of deposit (CD)
+            </h5>
+            <p class="text-neutral-700 mt-2 px-2 text-sm">
+              Everything you need to know about opening an account.
+            </p>
+            <a
+              class="text-green-500 font-semibold mt-6 pl-2 flex translate-y-24 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 ease-in-out"
+              >Read more
+              <span
+                class="material-symbols-outlined group-hover:pl-1.5 flex place-content-center transition-all duration-500 ease-in-out"
+              >
+                arrow_right_alt
+              </span>
+            </a>
+          </div>
         </div>
       </div>
     </div>
 
     <!--------------- Find More Resources ---------------->
-    <div class="w-full bg-emerald-100 mt-16 pt-8 pb-6 text-center">
-        <h4 class="font-bold text-lg md:text-xl mb-4">Find more resources</h4>
-        <div class="overflow-x-auto scroll-smooth px-24">
+    <div class="w-full bg-emerald-100 mt-0 pt-8 pb-6 text-center">
+      <h4 class="font-bold text-lg md:text-xl mb-4">Find more resources</h4>
+      <div class="overflow-x-auto scroll-smooth px-24">
+        <div
+          class="flex gap-4 pb-4 px-4 place-items-center min-w-fit justify-center"
+        >
           <div
-            class="flex gap-4 pb-4 px-4 place-items-center min-w-fit justify-center"
+            class="bg-white border min-w-fit border-black/10 hover:border-green-500 hover:text-green-500 rounded-full py-3 px-5 font-semibold text-sm md:text-base"
           >
-            <div
-              class="bg-white border min-w-fit border-black/10 hover:border-green-500 hover:text-green-500 rounded-full py-3 px-5 font-semibold text-sm md:text-base"
-            >
-              Savings accounts
-            </div>
-            <div
-              class="bg-white border min-w-fit border-black/10 hover:border-green-500 hover:text-green-500 rounded-full py-3 px-5 font-semibold text-sm md:text-base"
-            >
-              MMAs
-            </div>
-            <div
-              class="bg-white border min-w-fit border-black/10 hover:border-green-500 hover:text-green-500 rounded-full py-3 px-5 font-semibold text-sm md:text-base"
-            >
-              Checking accounts
-            </div>
-            <div
-              class="bg-white border min-w-fit border-black/10 hover:border-green-500 hover:text-green-500 rounded-full py-3 px-5 font-semibold text-sm md:text-base"
-            >
-              Federal reserve
-            </div>
+            Savings accounts
+          </div>
+          <div
+            class="bg-white border min-w-fit border-black/10 hover:border-green-500 hover:text-green-500 rounded-full py-3 px-5 font-semibold text-sm md:text-base"
+          >
+            MMAs
+          </div>
+          <div
+            class="bg-white border min-w-fit border-black/10 hover:border-green-500 hover:text-green-500 rounded-full py-3 px-5 font-semibold text-sm md:text-base"
+          >
+            Checking accounts
+          </div>
+          <div
+            class="bg-white border min-w-fit border-black/10 hover:border-green-500 hover:text-green-500 rounded-full py-3 px-5 font-semibold text-sm md:text-base"
+          >
+            Federal reserve
           </div>
         </div>
       </div>
+    </div>
 
     <!--------------- Editor's Pick ------------------->
     <div class="w-full">
@@ -249,29 +261,27 @@
             </a>
           </div> -->
 
-
-
           <div
-          class="group relative w-full h-64 sm:h-80 sm:w-[45%] lg:w-[35%] shadow-md shadow-black/30 text-white rounded-lg overflow-hidden"
-        >
-          <img
-            class="absolute -z-10 w-full h-auto rounded-t-lg group-hover:scale-110 transition-all duration-300 ease-in-out"
-            src="https://picsum.photos/200"
-          />
-          <h5 class="px-4 mt-3 font-semibold text-lg">
-            Current CD rates for January 2025
-          </h5>
-          <a
-            class="flex place-items-center mt-2 px-4 text-xs font-medium group-hover:opacity-100 opacity-0 transition-opacity duration-300 ease-in-out"
+            class="group relative w-full h-64 sm:h-80 sm:w-[45%] lg:w-[35%] shadow-md shadow-black/30 text-white rounded-lg overflow-hidden"
           >
-            Read more
-            <span
-              class="material-symbols-outlined flex place-content-center group-hover:pl-1.5 transition-all duration-500 ease-in-out"
+            <img
+              class="absolute -z-10 w-full h-auto rounded-t-lg group-hover:scale-110 transition-all duration-300 ease-in-out"
+              src="https://picsum.photos/200"
+            />
+            <h5 class="px-4 mt-3 font-semibold text-lg">
+              Current CD rates for January 2025
+            </h5>
+            <a
+              class="flex place-items-center mt-2 px-4 text-xs font-medium group-hover:opacity-100 opacity-0 transition-opacity duration-300 ease-in-out"
             >
-              arrow_right_alt
-            </span>
-          </a>
-        </div>
+              Read more
+              <span
+                class="material-symbols-outlined flex place-content-center group-hover:pl-1.5 transition-all duration-500 ease-in-out"
+              >
+                arrow_right_alt
+              </span>
+            </a>
+          </div>
 
           <div class="w-full sm:w-1/2">
             <div

@@ -8,10 +8,12 @@
       <div
         class="w-full h-fit py-2 flex gap-4 place-items-center justify-between text-white bg-gradient-to-br from-emerald-600 via-emerald-500 to-green-500 transition-all duration-300 ease-in-out"
         [ngClass]="{
-          'opacity-0 -my-6': !isAlertVisible,
+          'opacity-0 -my-12 sm:-my-8': !isAlertVisible,
           'opacity-100': isAlertVisible
         }"
       >
+        <div></div>
+
         <a
           class="pl-4 font-semibold text-center hover:underline underline-offset-2"
           [ngClass]="{
@@ -91,7 +93,7 @@
           </h2>
         </div>
         <a
-        routerLink="/loans/calculators"
+          routerLink="/loans/calculators"
           class="bg-white py-8 rounded-lg shadow-lg shadow-black/30 flex flex-col justify-center cursor-pointer duration-300 ease-in-out border border-black group"
         >
           <span
@@ -261,7 +263,7 @@
             />
             <div class="flex gap-3 place-items-center">
               <p class="font-bold text-2xl">4.7</p>
-              <div class="flex flex-col ">
+              <div class="flex flex-col">
                 <div>
                   <span
                     class="material-symbols-outlined transition-all duration-500 ease-in-out"
@@ -346,37 +348,57 @@
           </div>
         </div>
         <div class="pb-12">
-            <h3 class="text-center text-green-500 hover:text-green-600 hover:underline underline-offset-2 text-xl font-semibold cursor-pointer">All personal loan reviews</h3>
+          <h3
+            class="text-center text-green-500 hover:text-green-600 hover:underline underline-offset-2 text-xl font-semibold cursor-pointer"
+          >
+            All personal loan reviews
+          </h3>
         </div>
       </div>
     </div>
 
     <!--------------- Editor's Pick ------------------->
-    <div class="px-4 mt-4 flex flex-col gap-4">
-        <div class="flex place-items-center gap-4 shadow shadow-black/30 hover:shadow-lg rounded-lg p-4 cursor-pointer group">
-            <div class="bg-green-50/70 rounded-full">
-                <img class="h-16 w-auto p-2" src="./mm.svg" />
-            </div>
-            <p class="font-semibold group-hover:text-green-500">Personal loan calculator </p>
+    <div class="px-4 sm:px-32 mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div
+        class="flex place-items-center gap-4 shadow shadow-black/30 hover:shadow-lg rounded-lg p-4 cursor-pointer group"
+      >
+        <div class="bg-green-50/70 rounded-full">
+          <img class="h-16 w-auto p-2" src="./mm.svg" />
         </div>
-        <div class="flex place-items-center gap-4 shadow shadow-black/30 hover:shadow-lg rounded-lg p-4 cursor-pointer group">
-            <div class="bg-green-50/70 rounded-full">
-                <img class="h-16 w-auto p-2" src="./mm.svg" />
-            </div>
-            <p class="font-semibold group-hover:text-green-500">Student loan calculator </p>
+        <p class="font-semibold group-hover:text-green-500">
+          Personal loan calculator
+        </p>
+      </div>
+      <div
+        class="flex place-items-center gap-4 shadow shadow-black/30 hover:shadow-lg rounded-lg p-4 cursor-pointer group"
+      >
+        <div class="bg-green-50/70 rounded-full">
+          <img class="h-16 w-auto p-2" src="./mm.svg" />
         </div>
-        <div class="flex place-items-center gap-4 shadow shadow-black/30 hover:shadow-lg rounded-lg p-4 cursor-pointer group">
-            <div class="bg-green-50/70 rounded-full">
-                <img class="h-16 w-auto p-2" src="./mm.svg" />
-            </div>
-            <p class="font-semibold group-hover:text-green-500">Auto loan calculator </p>
+        <p class="font-semibold group-hover:text-green-500">
+          Student loan calculator
+        </p>
+      </div>
+      <div
+        class="flex place-items-center gap-4 shadow shadow-black/30 hover:shadow-lg rounded-lg p-4 cursor-pointer group"
+      >
+        <div class="bg-green-50/70 rounded-full">
+          <img class="h-16 w-auto p-2" src="./mm.svg" />
         </div>
-        <div class="flex place-items-center gap-4 shadow shadow-black/30 hover:shadow-lg rounded-lg p-4 cursor-pointer group">
-            <div class="bg-green-50/70 rounded-full">
-                <img class="h-16 w-auto p-2" src="./mm.svg" />
-            </div>
-            <p class="font-semibold group-hover:text-green-500">All loan calculators </p>
+        <p class="font-semibold group-hover:text-green-500">
+          Auto loan calculator
+        </p>
+      </div>
+      <div
+        class="flex place-items-center gap-4 shadow shadow-black/30 hover:shadow-lg rounded-lg p-4 cursor-pointer group"
+      >
+        <div class="bg-green-50/70 rounded-full">
+          <img class="h-16 w-auto p-2" src="./mm.svg" />
         </div>
+        <p class="font-semibold group-hover:text-green-500">
+          All loan calculators
+        </p>
+      </div>
     </div>
 
     <!--------------- Loan by credit band ---------------->

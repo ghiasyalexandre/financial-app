@@ -3,7 +3,7 @@
   <div
     class="w-full h-fit py-2 flex gap-4 place-items-center justify-between text-white bg-gradient-to-br from-emerald-600 via-emerald-500 to-green-500 transition-all duration-300 ease-in-out"
     [ngClass]="{
-      'opacity-0 -my-8': !isAlertVisible,
+      'opacity-0 -my-12 sm:-my-8': !isAlertVisible,
       'opacity-100': isAlertVisible
     }"
   >
@@ -90,11 +90,10 @@
         </a>
       </div>
     </div>
-    
-</div>
-<button
-  class="ml-4 my-12 rounded px-6 py-2 text-center border-2 border-green-500 hover:bg-green-50 text-green-500 cursor-pointer transition-all duration-300 ease-in-out font-semibold"
->
-  Today's Personal Loan Rates
-</button>
+  </div>
+  <button
+    class="ml-4 my-12 rounded px-6 py-2 text-center border-2 border-green-500 hover:bg-green-50 text-green-500 cursor-pointer transition-all duration-300 ease-in-out font-semibold"
+  >
+    Today's Personal Loan Rates
+  </button>
 </section>
