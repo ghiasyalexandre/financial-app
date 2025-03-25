@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-all-calculators',
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './all-calculators.component.html',
-  styleUrl: './all-calculators.component.scss'
+  styleUrl: './all-calculators.component.scss',
 })
-export class AllCalculatorsComponent {
-
-}
+export class AllCalculatorsComponent {}

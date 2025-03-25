@@ -18,8 +18,8 @@ export class MortgageCalculatorComponent {
   years = 30; // Default loan term in years
   zipcode = 19150;
 
-  propertyTax = 0;
-  insurance = 0;
+  propertyTax = 240;
+  insurance = 72;
 
   monthlyPayment = 0;
 
@@ -37,7 +37,11 @@ export class MortgageCalculatorComponent {
     this.chart = new Chart('canvas', {
       type: 'doughnut',
       data: {
-        labels: ['Mortgage', 'Property Tax', 'Insurance'],
+        labels: [
+          'Principal & interest',
+          'Property tax',
+          "Homeowner's insurance",
+        ],
         datasets: [
           {
             label: 'Monthly Payment Breakdown',
