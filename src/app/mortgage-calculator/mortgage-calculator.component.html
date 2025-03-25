@@ -116,8 +116,20 @@
       />
     </div>
 
+    <div class="form-group !mb-0">
+      <!-- <label for="zipcode"></label> -->
+      <mat-form-field class="!mb-0 w-full sm:w-36">
+        <mat-label>Credit Score</mat-label>
+        <mat-select [(ngModel)]="selectedCredit" name="creditScore">
+          @for (score of creditScores; track score) {
+          <mat-option [value]="score.value">{{ score.viewValue }}</mat-option>
+          }
+        </mat-select>
+      </mat-form-field>
+    </div>
+
     <div class="form-group">
-      <label for="zipcode">ZIP code</label>
+      <label for="credit">ZIP code</label>
       <input
         id="zipcode"
         type="number"

@@ -1,14 +1,30 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+
 import Chart from 'chart.js/auto';
+
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatSelectModule } from '@angular/material/select';
+
+interface CreditScores {
+  value: string;
+  viewValue: string;
+}
 
 @Component({
   standalone: true,
   selector: 'app-mortgage-calculator',
   templateUrl: './mortgage-calculator.component.html',
   styleUrls: ['./mortgage-calculator.component.scss'],
-  imports: [FormsModule, CommonModule],
+  imports: [
+    FormsModule,
+    CommonModule,
+    MatSelectModule,
+    MatTooltipModule,
+    MatFormFieldModule,
+  ],
 })
 export class MortgageCalculatorComponent {
   principal = 425000; // Default principal
@@ -20,6 +36,16 @@ export class MortgageCalculatorComponent {
 
   propertyTax = 240;
   insurance = 72;
+
+  selectedCredit = 'excellent';
+
+  creditScores: CreditScores[] = [
+    { value: 'excellent', viewValue: '740+' },
+    { value: 'great', viewValue: '720-739' },
+    { value: 'good', viewValue: '700-719' },
+    { value: 'fair', viewValue: '680-699' },
+    { value: 'bad', viewValue: '660-679' },
+  ];
 
   monthlyPayment = 0;
 
