@@ -73,7 +73,12 @@
   <div
     class="not-sr-only md:sr-only flex justify-between pl-6 pr-4 place-items-center h-full font-medium text-white"
   >
-    <a routerLink="/" draggable="false">
+    <a
+      routerLink="/"
+      draggable="false"
+      matTooltip="Home"
+      matTooltipPosition="below"
+    >
       <img draggable="false" class="h-12 w-12 invert" src="./mm.svg" />
     </a>
     <div class="flex gap-4">
@@ -81,6 +86,8 @@
       <span
         class="z-30 material-symbols-outlined cursor-pointer opacity-80 hover:opacity-100 transition-opacity duration-300 ease-in-out"
         (click)="toggleSearch()"
+        matTooltip="{{ searchVisible ? 'Close search' : 'Search' }}"
+        matTooltipPosition="below"
       >
         {{ searchVisible ? "close" : "search" }}
       </span>
@@ -88,6 +95,8 @@
       <span
         class="z-30 material-symbols-outlined cursor-pointer opacity-80 hover:opacity-100 transition-opacity duration-300 ease-in-out"
         (click)="toggleMenu()"
+        matTooltip="{{ menuVisible ? 'Close menu' : 'Menu' }}"
+        matTooltipPosition="below"
       >
         {{ menuVisible ? "close" : "menu" }}
       </span>
@@ -117,11 +126,15 @@
           draggable="false"
           class="h-12 w-12 hover:scale-115 transition-all duration-300 ease-in-out"
           src="./mm-white.svg"
+          matTooltip="Home"
+          matTooltipPosition="right"
         />
       </a>
       <span
         class="material-symbols-outlined cursor-pointer opacity-70 hover:opacity-100 transition-opacity duration-300 ease-in-out"
         (click)="toggleMenu()"
+        matTooltip="Close"
+        matTooltipPosition="left"
         >close</span
       >
     </div>

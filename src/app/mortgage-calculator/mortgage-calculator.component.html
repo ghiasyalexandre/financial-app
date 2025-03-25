@@ -1,46 +1,220 @@
-<div class="mortgage-calculator">
-    <h2 class="text-2xl">Mortgage Calculator</h2>
-  
-    <form (ngSubmit)="calculateMortgage()">
-      <div class="form-group">
-        <label for="principal">Principal (Loan Amount)</label>
+<div class="p-2 m-6">
+  <h2 class="text-3xl sm:text-4xl font-semibold">Mortgage Calculator</h2>
+  <hr class="my-2" />
+  <form (ngSubmit)="calculateMortgage()">
+    <div class="form-group">
+      <label for="principal">Home Price</label>
+      <div class="flex">
+        <div
+          class="border border-black rounded-l border-r-0 pl-2 place-content-center"
+        >
+          $
+        </div>
         <input
           id="principal"
           type="number"
+          class="!rounded-l-none !border-l-0 !pl-0.5"
           [(ngModel)]="principal"
           name="principal"
           required
         />
       </div>
-  
-      <div class="form-group">
-        <label for="annualInterestRate">Annual Interest Rate (%)</label>
-        <input
-          id="annualInterestRate"
-          type="number"
-          [(ngModel)]="annualInterestRate"
-          name="annualInterestRate"
-          step="0.1"
-          required
-        />
-      </div>
-  
-      <div class="form-group">
-        <label for="years">Loan Term (Years)</label>
-        <input
-          id="years"
-          type="number"
-          [(ngModel)]="years"
-          name="years"
-          required
-        />
-      </div>
-  
-      <button type="submit">Calculate</button>
-    </form>
-  
-    <div class="result" *ngIf="monthlyPayment > 0">
-      <h3>Monthly Payment: {{ monthlyPayment | currency }}</h3>
     </div>
+
+    <div class="form-group">
+      <div class="flex justify-between">
+        <label for="downPayment">Down Payment</label>
+        <div
+          class="rounded-full text-xs font-semibold h-4 px-1.5 border cursor-pointer place-content-center border-emerald-600 text-emerald-600"
+          matTooltip="Down payment: an initial payment made when something is bought on credit."
+          matTooltipPosition="before"
+        >
+          i
+        </div>
+      </div>
+      <div class="flex">
+        <div
+          class="border border-black rounded-l border-r-0 pl-2 place-content-center"
+        >
+          $
+        </div>
+        <input
+          id="downPayment"
+          class="!rounded-r-none !rounded-l-none !border-l-0 !pl-0.5"
+          type="number"
+          [(ngModel)]="downPayment"
+          name="downPayment"
+          required
+        />
+        <div class="flex">
+          <input
+            id="downPercent"
+            class="!border-x-0 !rounded-l-none !rounded-r-none !w-16"
+            type="number"
+            [(ngModel)]="downPercent"
+            name="downPercent"
+            required
+          />
+          <div
+            class="border border-black rounded-r border-l-0 place-content-center pr-2"
+          >
+            %
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="form-group">
+      <label for="downPercent">Percent Down</label>
+      <input
+        id="downPercent"
+        type="number"
+        [(ngModel)]="downPercent"
+        name="downPercent"
+        required
+      />
+    </div> -->
+
+    <div class="form-group">
+      <div class="flex justify-between">
+        <label for="years">Loan Term (Years)</label>
+        <div
+          class="rounded-full text-xs font-semibold h-4 px-1.5 border cursor-pointer place-content-center border-emerald-600 text-emerald-600"
+          matTooltip="Down payment: an initial payment made when something is bought on credit."
+          matTooltipPosition="before"
+        >
+          i
+        </div>
+      </div>
+      <input
+        id="years"
+        type="number"
+        [(ngModel)]="years"
+        name="years"
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <div class="flex justify-between">
+        <label for="annualInterestRate">Annual Interest Rate (%)</label>
+        <div
+          class="rounded-full text-xs font-semibold h-4 px-1.5 border cursor-pointer place-content-center border-emerald-600 text-emerald-600"
+          matTooltip="Down payment: an initial payment made when something is bought on credit."
+          matTooltipPosition="before"
+        >
+          i
+        </div>
+      </div>
+      <input
+        id="annualInterestRate"
+        type="number"
+        [(ngModel)]="annualInterestRate"
+        name="annualInterestRate"
+        step="0.1"
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="zipcode">ZIP code</label>
+      <input
+        id="zipcode"
+        type="number"
+        [(ngModel)]="zipcode"
+        name="zipcode"
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <div class="flex justify-between">
+        <label for="propertyTax">Property Tax</label>
+        <div
+          class="rounded-full text-xs font-semibold h-4 px-1.5 border cursor-pointer place-content-center border-emerald-600 text-emerald-600"
+          matTooltip="Down payment: an initial payment made when something is bought on credit."
+          matTooltipPosition="before"
+        >
+          i
+        </div>
+      </div>
+      <div class="flex">
+        <div
+          class="border border-black rounded-l border-r-0 pl-2 place-content-center"
+        >
+          $
+        </div>
+        <input
+          id="propertyTax"
+          type="number"
+          class="!rounded-l-none !border-l-0 !pl-0.5"
+          [(ngModel)]="propertyTax"
+          name="propertyTax"
+          step="0.1"
+        />
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="flex justify-between">
+        <label for="insurance">Homeowner's Insurance</label>
+        <div
+          class="rounded-full text-xs font-semibold h-4 px-1.5 border cursor-pointer place-content-center border-emerald-600 text-emerald-600"
+          matTooltip="Down payment: an initial payment made when something is bought on credit."
+          matTooltipPosition="before"
+        >
+          i
+        </div>
+      </div>
+      <div class="flex">
+        <div
+          class="border border-black rounded-l border-r-0 pl-2 place-content-center"
+        >
+          $
+        </div>
+        <input
+          id="insurance"
+          type="number"
+          class="!rounded-l-none !border-l-0 !pl-0.5"
+          [(ngModel)]="insurance"
+          name="insurance"
+          step="0.1"
+        />
+      </div>
+    </div>
+
+    <button
+      *ngIf="monthlyPayment == 0"
+      class="bg-emerald-600 hover:bg-emerald-500 w-full sm:w-36"
+      type="submit"
+    >
+      Calculate
+    </button>
+
+    <button
+      *ngIf="monthlyPayment > 0"
+      class="bg-emerald-600 hover:bg-emerald-500 w-full sm:w-36"
+      type="submit"
+    >
+      Update
+    </button>
+  </form>
+
+  <div class="result" *ngIf="monthlyPayment > 0">
+    <hr class="my-4" />
+    <h3 class="font-semibold text-2xl">
+      Monthly payment: {{ monthlyPayment | currency }}
+    </h3>
   </div>
-  
+
+  <div
+    [ngClass]="
+      monthlyPayment > 0
+        ? 'visible opacity-100  h-full'
+        : 'invisible opacity-0 h-0'
+    "
+    class="transition-opacity duration-300"
+  >
+    <canvas id="canvas">{{ chart }}</canvas>
+  </div>
+</div>

@@ -6,74 +6,76 @@
       src="https://www.bankrate.com/f/102997/1280x482/42d5e52d02/retirement-hub-hero.webp?auto=webp&fit=crop&width=1328&height=500&enable=upscale"
     /> -->
     <div
-    class="text-center pb-8 bg-gradient-to-b from-emerald-600 via-emerald-500 to-green-500 w-full"
-  >
-    <!---------------- Home Title ----------------->
-    <div class="text-white font-medium ">
-      <h1
-        class="text-4xl sm:text-5xl pt-8 md:pt-10 mb-4 mx-4 md:mx-8 font-semibold"
-      >
-        Calculators
-      </h1>
-      <p class="mx-4 md:mx-8 font-semibold text-pretty text-sm sm:text-base">
-        Use our financial calculators to finesse your monthly budget, compare
-        borrowing costs and plan for your future.
-      </p>
-    </div>
-
-    <!---------------- Grid Boxes ----------------->
-    <div
-      class="grid grid-cols-1 xs:grid-cols-2 mt-10 mx-4 md:mx-8 gap-4 md:gap-8 font-semibold text-center text-lg"
+      class="text-center pb-8 bg-gradient-to-b from-emerald-600 via-emerald-500 to-green-500 w-full"
     >
-      <div
-        class="bg-white py-8 rounded-lg shadow-lg shadow-black/30 flex flex-col justify-center cursor-pointer duration-300 ease-in-out group"
-      >
-        <span
-          class="material-symbols-outlined text-4xl mb-1 group-hover:text-green-500"
+      <!---------------- Home Title ----------------->
+      <div class="text-white font-medium">
+        <h1
+          class="text-4xl sm:text-5xl pt-8 md:pt-10 mb-4 mx-4 md:mx-8 font-semibold"
         >
-          real_estate_agent
-        </span>
-        <h2 class="text-black group-hover:text-green-500 px-2">
-          Mortgage calculator
-        </h2>
+          Calculators
+        </h1>
+        <p class="mx-4 md:mx-8 font-semibold text-pretty text-sm sm:text-base">
+          Use our financial calculators to finesse your monthly budget, compare
+          borrowing costs and plan for your future.
+        </p>
       </div>
+
+      <!---------------- Grid Boxes ----------------->
       <div
-        class="bg-white py-8 rounded-lg shadow-lg shadow-black/30 flex flex-col justify-center cursor-pointer duration-300 ease-in-out group"
+        class="grid grid-cols-1 xs:grid-cols-2 mt-10 mx-4 md:mx-8 gap-4 md:gap-8 font-semibold text-center text-lg"
       >
-        <span
-          class="material-symbols-outlined text-4xl mb-1 group-hover:text-green-500"
+        <div
+          class="bg-white py-8 rounded-lg shadow-lg shadow-black/30 flex flex-col justify-center cursor-pointer duration-300 ease-in-out group"
         >
-          calculate
-        </span>
-        <h2 class="text-black group-hover:text-green-500 px-2">
-          CD calculator
-        </h2>
-      </div>
-      <div
-        class="bg-white py-8 rounded-lg shadow-lg shadow-black/30 flex flex-col justify-center cursor-pointer duration-300 ease-in-out group"
-      >
-        <span
-          class="material-symbols-outlined text-4xl mb-1 group-hover:text-green-500"
+          <a routerLink="/mortgages/mortgage-calculator">
+            <span
+              class="material-symbols-outlined text-4xl mb-1 group-hover:text-green-500"
+            >
+              real_estate_agent
+            </span>
+            <h2 class="text-black group-hover:text-green-500 px-2">
+              Mortgage calculator
+            </h2>
+          </a>
+        </div>
+        <div
+          class="bg-white py-8 rounded-lg shadow-lg shadow-black/30 flex flex-col justify-center cursor-pointer duration-300 ease-in-out group"
         >
-          no_crash
-        </span>
-        <h2 class="text-black group-hover:text-green-500 px-2">
-          Auto loan calculator
-        </h2>
-      </div>
-      <div
-        class="bg-white py-8 rounded-lg shadow-lg shadow-black/30 flex flex-col justify-center cursor-pointer duration-300 ease-in-out group"
-      >
-        <span
-          class="material-symbols-outlined text-4xl mb-1 group-hover:text-green-500"
+          <span
+            class="material-symbols-outlined text-4xl mb-1 group-hover:text-green-500"
+          >
+            calculate
+          </span>
+          <h2 class="text-black group-hover:text-green-500 px-2">
+            CD calculator
+          </h2>
+        </div>
+        <div
+          class="bg-white py-8 rounded-lg shadow-lg shadow-black/30 flex flex-col justify-center cursor-pointer duration-300 ease-in-out group"
         >
-          payments
-        </span>
-        <h2 class="text-black group-hover:text-green-500 px-2">
-          Simple savings calculator
-        </h2>
+          <span
+            class="material-symbols-outlined text-4xl mb-1 group-hover:text-green-500"
+          >
+            no_crash
+          </span>
+          <h2 class="text-black group-hover:text-green-500 px-2">
+            Auto loan calculator
+          </h2>
+        </div>
+        <div
+          class="bg-white py-8 rounded-lg shadow-lg shadow-black/30 flex flex-col justify-center cursor-pointer duration-300 ease-in-out group"
+        >
+          <span
+            class="material-symbols-outlined text-4xl mb-1 group-hover:text-green-500"
+          >
+            payments
+          </span>
+          <h2 class="text-black group-hover:text-green-500 px-2">
+            Simple savings calculator
+          </h2>
+        </div>
       </div>
-    </div>
     </div>
 
     <!--------------- Different Calculators ---------------->
@@ -90,88 +92,112 @@
           new savings account, take out new debt, or purchase a new car or home.
         </p>
         <div class="grid grid-cols sm:grid-cols-2 gap-8 px-4 md:px-8 mt-10">
-            <div class="flex flex-col group">
-                <div class="flex gap-1.5 place-items-center">
-                    <h4 class="font-semibold text-xl">Mortgage Calculators</h4>
-                    <span
-                    class="material-symbols-outlined text-green-500 group-hover:pl-1 transition-all duration-300 ease-in-out"
-                  >
-                    arrow_right_alt
-                  </span>
-                </div>
-                <hr class="my-2"/>
-                <div class="">
-                    <ul class="text-sm flex flex-col gap-2">
-                        <li class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium">
-                            Mortgage Calculator
-                        </li>
-                        <li class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium">
-                            Amortization schedule calculator
-                        </li>
-                        <li class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium">
-                            How much house can I afford?
-                        </li>
-                        <li class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium">
-                            Debt-to-income ratio calculator
-                        </li>
-                    </ul>
-                </div>
+          <div class="flex flex-col group">
+            <div class="flex gap-1.5 place-items-center">
+              <h4 class="font-semibold text-xl">Mortgage Calculators</h4>
+              <span
+                class="material-symbols-outlined text-green-500 group-hover:pl-1 transition-all duration-300 ease-in-out"
+              >
+                arrow_right_alt
+              </span>
             </div>
-            <div class="flex flex-col group">
-                <div class="flex gap-1.5 place-items-center">
-                    <h4 class="font-semibold text-xl">Auto Calculators</h4>
-                    <span
-                    class="material-symbols-outlined text-green-500 group-hover:pl-1 transition-all duration-300 ease-in-out"
-                  >
-                    arrow_right_alt
-                  </span>
-                </div>
-                <hr class="my-2"/>
-                <div class="">
-                    <ul class="text-sm flex flex-col gap-2">
-                        <li class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium">
-                            Auto loan calculator
-                        </li>
-                        <li class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium">
-                            Auto lease calculator
-                        </li>
-                        <li class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium">
-                            Auto refinance calculator
-                        </li>
-                        <li class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium">
-                            Auto loan payoff calculator
-                        </li>
-                    </ul>
-                </div>
+            <hr class="my-2" />
+            <div class="">
+              <ul class="text-sm flex flex-col gap-2">
+                <li
+                  class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium"
+                >
+                  Mortgage Calculator
+                </li>
+                <li
+                  class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium"
+                >
+                  Amortization schedule calculator
+                </li>
+                <li
+                  class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium"
+                >
+                  How much house can I afford?
+                </li>
+                <li
+                  class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium"
+                >
+                  Debt-to-income ratio calculator
+                </li>
+              </ul>
             </div>
-            <div class="flex flex-col group">
-                <div class="flex gap-1.5 place-items-center">
-                    <h4 class="font-semibold text-xl">Credit Card Calculators</h4>
-                    <span
-                    class="material-symbols-outlined text-green-500 group-hover:pl-1 transition-all duration-300 ease-in-out"
-                  >
-                    arrow_right_alt
-                  </span>
-                </div>
-                <hr class="my-2"/>
-                <div class="">
-                    <ul class="text-sm flex flex-col gap-2">
-                        <li class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium">
-                            Debt payoff calculator
-                        </li>
-                        <li class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium">
-                            Credit card minimum payment calculator
-                        </li>
-                        <li class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium">
-                            Credit card balance transfer calculator
-                        </li>
-                        <li class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium">
-                            Credit card payoff calculator
-                        </li>
-                    </ul>
-                </div>
+          </div>
+          <div class="flex flex-col group">
+            <div class="flex gap-1.5 place-items-center">
+              <h4 class="font-semibold text-xl">Auto Calculators</h4>
+              <span
+                class="material-symbols-outlined text-green-500 group-hover:pl-1 transition-all duration-300 ease-in-out"
+              >
+                arrow_right_alt
+              </span>
             </div>
-            <!-- <div class="flex flex-col group">
+            <hr class="my-2" />
+            <div class="">
+              <ul class="text-sm flex flex-col gap-2">
+                <li
+                  class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium"
+                >
+                  Auto loan calculator
+                </li>
+                <li
+                  class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium"
+                >
+                  Auto lease calculator
+                </li>
+                <li
+                  class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium"
+                >
+                  Auto refinance calculator
+                </li>
+                <li
+                  class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium"
+                >
+                  Auto loan payoff calculator
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="flex flex-col group">
+            <div class="flex gap-1.5 place-items-center">
+              <h4 class="font-semibold text-xl">Credit Card Calculators</h4>
+              <span
+                class="material-symbols-outlined text-green-500 group-hover:pl-1 transition-all duration-300 ease-in-out"
+              >
+                arrow_right_alt
+              </span>
+            </div>
+            <hr class="my-2" />
+            <div class="">
+              <ul class="text-sm flex flex-col gap-2">
+                <li
+                  class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium"
+                >
+                  Debt payoff calculator
+                </li>
+                <li
+                  class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium"
+                >
+                  Credit card minimum payment calculator
+                </li>
+                <li
+                  class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium"
+                >
+                  Credit card balance transfer calculator
+                </li>
+                <li
+                  class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium"
+                >
+                  Credit card payoff calculator
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- <div class="flex flex-col group">
                 <div class="flex gap-1.5 place-items-center">
                     <h4 class="font-semibold text-xl">Home Equity Calculators</h4>
                     <span
@@ -198,400 +224,515 @@
                     </ul>
                 </div>
             </div> -->
-            <div class="flex flex-col group">
-                <div class="flex gap-1.5 place-items-center">
-                    <h4 class="font-semibold text-xl">Investing & CD Calculators</h4>
-                    <span
-                    class="material-symbols-outlined text-green-500 group-hover:pl-1 transition-all duration-300 ease-in-out"
-                  >
-                    arrow_right_alt
-                  </span>
-                </div>
-                <hr class="my-2"/>
-                <div class="">
-                    <ul class="text-sm flex flex-col gap-2">
-                        <li class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium">
-                            Savings calculator
-                        </li>
-                        <li class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium">
-                            Investment calculator
-                        </li>
-                        <li class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium">
-                            CD interest calculator
-                        </li>
-                        <li class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium">
-                            Annuity calculator
-                        </li>
-                    </ul>
-                </div>
+          <div class="flex flex-col group">
+            <div class="flex gap-1.5 place-items-center">
+              <h4 class="font-semibold text-xl">Investing & CD Calculators</h4>
+              <span
+                class="material-symbols-outlined text-green-500 group-hover:pl-1 transition-all duration-300 ease-in-out"
+              >
+                arrow_right_alt
+              </span>
             </div>
-            <div class="flex flex-col group">
-                <div class="flex gap-1.5 place-items-center">
-                    <h4 class="font-semibold text-xl">Loan Calculators</h4>
-                    <span
-                    class="material-symbols-outlined text-green-500 group-hover:pl-1 transition-all duration-300 ease-in-out"
-                  >
-                    arrow_right_alt
-                  </span>
-                </div>
-                <hr class="my-2"/>
-                <div class="">
-                    <ul class="text-sm flex flex-col gap-2">
-                        <li class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium">
-                            Loan calculator
-                        </li>
-                        <li class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium">
-                            Loan payment calculator
-                        </li>
-                        <li class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium">
-                            Personal loan calculator
-                        </li>
-                        <li class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium">
-                            Student loan calculator
-                        </li>
-                    </ul>
-                </div>
+            <hr class="my-2" />
+            <div class="">
+              <ul class="text-sm flex flex-col gap-2">
+                <li
+                  class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium"
+                >
+                  Savings calculator
+                </li>
+                <li
+                  class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium"
+                >
+                  Investment calculator
+                </li>
+                <li
+                  class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium"
+                >
+                  CD interest calculator
+                </li>
+                <li
+                  class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium"
+                >
+                  Annuity calculator
+                </li>
+              </ul>
             </div>
+          </div>
+          <div class="flex flex-col group">
+            <div class="flex gap-1.5 place-items-center">
+              <h4 class="font-semibold text-xl">Loan Calculators</h4>
+              <span
+                class="material-symbols-outlined text-green-500 group-hover:pl-1 transition-all duration-300 ease-in-out"
+              >
+                arrow_right_alt
+              </span>
+            </div>
+            <hr class="my-2" />
+            <div class="">
+              <ul class="text-sm flex flex-col gap-2">
+                <li
+                  class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium"
+                >
+                  Loan calculator
+                </li>
+                <li
+                  class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium"
+                >
+                  Loan payment calculator
+                </li>
+                <li
+                  class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium"
+                >
+                  Personal loan calculator
+                </li>
+                <li
+                  class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium"
+                >
+                  Student loan calculator
+                </li>
+              </ul>
+            </div>
+          </div>
 
-            <div class="flex flex-col group">
-                <div class="flex gap-1.5 place-items-center">
-                    <h4 class="font-semibold text-xl">Retirement Calculators</h4>
-                    <span
-                    class="material-symbols-outlined text-green-500 group-hover:pl-1 transition-all duration-300 ease-in-out"
-                  >
-                    arrow_right_alt
-                  </span>
-                </div>
-                <hr class="my-2"/>
-                <div class="">
-                    <ul class="text-sm flex flex-col gap-2">
-                        <li class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium">
-                            Retirement calculator
-                        </li>
-                        <li class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium">
-                            Retirement income calculator
-                        </li>
-                        <li class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium">
-                            401(k) calculator
-                        </li>
-                        <li class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium">
-                            Return on investment calculator
-                        </li>
-                    </ul>
-                </div>
+          <div class="flex flex-col group">
+            <div class="flex gap-1.5 place-items-center">
+              <h4 class="font-semibold text-xl">Retirement Calculators</h4>
+              <span
+                class="material-symbols-outlined text-green-500 group-hover:pl-1 transition-all duration-300 ease-in-out"
+              >
+                arrow_right_alt
+              </span>
             </div>
-            <div class="flex flex-col group">
-                <div class="flex gap-1.5 place-items-center">
-                    <h4 class="font-semibold text-xl">Savings Calculators</h4>
-                    <span
-                    class="material-symbols-outlined text-green-500 group-hover:pl-1 transition-all duration-300 ease-in-out"
-                  >
-                    arrow_right_alt
-                  </span>
-                </div>
-                <hr class="my-2"/>
-                <div class="">
-                    <ul class="text-sm flex flex-col gap-2">
-                        <li class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium">
-                            Cost of living calculator
-                        </li>
-                        <li class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium">
-                            Simple savings calculator
-                        </li>
-                        <li class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium">
-                            Compound interest calculator
-                        </li>
-                        <li class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium">
-                            Savings goal calculator
-                        </li>
-                    </ul>
-                </div>
+            <hr class="my-2" />
+            <div class="">
+              <ul class="text-sm flex flex-col gap-2">
+                <li
+                  class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium"
+                >
+                  Retirement calculator
+                </li>
+                <li
+                  class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium"
+                >
+                  Retirement income calculator
+                </li>
+                <li
+                  class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium"
+                >
+                  401(k) calculator
+                </li>
+                <li
+                  class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium"
+                >
+                  Return on investment calculator
+                </li>
+              </ul>
             </div>
-            <div class="flex flex-col group">
-                <div class="flex gap-1.5 place-items-center">
-                    <h4 class="font-semibold text-xl">Insurance Calculators</h4>
-                    <span
-                    class="material-symbols-outlined text-green-500 group-hover:pl-1 transition-all duration-300 ease-in-out"
-                  >
-                    arrow_right_alt
-                  </span>
-                </div>
-                <hr class="my-2"/>
-                <div class="">
-                    <ul class="text-sm flex flex-col gap-2">
-                        <li class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium">
-                            How much life insurance do I need?
-                        </li>
-                        <li class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium">
-                            Annuity calculator
-                        </li>
-                        <li class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium">
-                            What type of insurance do you need?
-                        </li>
-                    </ul>
-                </div>
+          </div>
+          <div class="flex flex-col group">
+            <div class="flex gap-1.5 place-items-center">
+              <h4 class="font-semibold text-xl">Savings Calculators</h4>
+              <span
+                class="material-symbols-outlined text-green-500 group-hover:pl-1 transition-all duration-300 ease-in-out"
+              >
+                arrow_right_alt
+              </span>
             </div>
-            <div class="flex flex-col group">
-                <div class="flex gap-1.5 place-items-center">
-                    <h4 class="font-semibold text-xl">Tax Calculators</h4>
-                    <span
-                    class="material-symbols-outlined text-green-500 group-hover:pl-1 transition-all duration-300 ease-in-out"
-                  >
-                    arrow_right_alt
-                  </span>
-                </div>
-                <hr class="my-2"/>
-                <div class="">
-                    <ul class="text-sm flex flex-col gap-2">
-                        <li class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium">
-                            1040 tax calculator
-                        </li>
-                        <li class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium">
-                            Hourly paycheck calculator
-                        </li>
-                        <li class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium">
-                            Net-to-gross paycheck calculator
-                        </li>
-                        <li class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium">
-                            Payroll deductions calculator
-                        </li>
-                    </ul>
-                </div>
+            <hr class="my-2" />
+            <div class="">
+              <ul class="text-sm flex flex-col gap-2">
+                <li
+                  class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium"
+                >
+                  Cost of living calculator
+                </li>
+                <li
+                  class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium"
+                >
+                  Simple savings calculator
+                </li>
+                <li
+                  class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium"
+                >
+                  Compound interest calculator
+                </li>
+                <li
+                  class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium"
+                >
+                  Savings goal calculator
+                </li>
+              </ul>
             </div>
-            <div class="flex flex-col group">
-                <div class="flex gap-1.5 place-items-center">
-                    <h4 class="font-semibold text-xl">Business Calculators</h4>
-                    <span
-                    class="material-symbols-outlined text-green-500 group-hover:pl-1 transition-all duration-300 ease-in-out"
-                  >
-                    arrow_right_alt
-                  </span>
-                </div>
-                <hr class="my-2"/>
-                <div class="">
-                    <ul class="text-sm flex flex-col gap-2">
-                        <li class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium">
-                            Calculate your payment on any loan
-                        </li>
-                        <li class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium">
-                            Current ratio calculator
-                        </li>
-                        <li class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium">
-                            Quick ratio calculator
-                        </li>
-                        <li class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium">
-                            Gross profit margin calculator
-                        </li>
-                    </ul>
-                </div>
+          </div>
+          <div class="flex flex-col group">
+            <div class="flex gap-1.5 place-items-center">
+              <h4 class="font-semibold text-xl">Insurance Calculators</h4>
+              <span
+                class="material-symbols-outlined text-green-500 group-hover:pl-1 transition-all duration-300 ease-in-out"
+              >
+                arrow_right_alt
+              </span>
             </div>
-            <div class="flex flex-col group">
-                <div class="flex gap-1.5 place-items-center">
-                    <h4 class="font-semibold text-xl">College Calculators</h4>
-                    <span
-                    class="material-symbols-outlined text-green-500 group-hover:pl-1 transition-all duration-300 ease-in-out"
-                  >
-                    arrow_right_alt
-                  </span>
-                </div>
-                <hr class="my-2"/>
-                <div class="">
-                    <ul class="text-sm flex flex-col gap-2">
-                        <li class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium">
-                            College savings calculator
-                        </li>
-                        <li class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium">
-                            Student budget calculator
-                        </li>
-                    </ul>
-                </div>
+            <hr class="my-2" />
+            <div class="">
+              <ul class="text-sm flex flex-col gap-2">
+                <li
+                  class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium"
+                >
+                  How much life insurance do I need?
+                </li>
+                <li
+                  class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium"
+                >
+                  Annuity calculator
+                </li>
+                <li
+                  class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium"
+                >
+                  What type of insurance do you need?
+                </li>
+              </ul>
             </div>
-
+          </div>
+          <div class="flex flex-col group">
+            <div class="flex gap-1.5 place-items-center">
+              <h4 class="font-semibold text-xl">Tax Calculators</h4>
+              <span
+                class="material-symbols-outlined text-green-500 group-hover:pl-1 transition-all duration-300 ease-in-out"
+              >
+                arrow_right_alt
+              </span>
+            </div>
+            <hr class="my-2" />
+            <div class="">
+              <ul class="text-sm flex flex-col gap-2">
+                <li
+                  class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium"
+                >
+                  1040 tax calculator
+                </li>
+                <li
+                  class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium"
+                >
+                  Hourly paycheck calculator
+                </li>
+                <li
+                  class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium"
+                >
+                  Net-to-gross paycheck calculator
+                </li>
+                <li
+                  class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium"
+                >
+                  Payroll deductions calculator
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="flex flex-col group">
+            <div class="flex gap-1.5 place-items-center">
+              <h4 class="font-semibold text-xl">Business Calculators</h4>
+              <span
+                class="material-symbols-outlined text-green-500 group-hover:pl-1 transition-all duration-300 ease-in-out"
+              >
+                arrow_right_alt
+              </span>
+            </div>
+            <hr class="my-2" />
+            <div class="">
+              <ul class="text-sm flex flex-col gap-2">
+                <li
+                  class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium"
+                >
+                  Calculate your payment on any loan
+                </li>
+                <li
+                  class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium"
+                >
+                  Current ratio calculator
+                </li>
+                <li
+                  class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium"
+                >
+                  Quick ratio calculator
+                </li>
+                <li
+                  class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium"
+                >
+                  Gross profit margin calculator
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="flex flex-col group">
+            <div class="flex gap-1.5 place-items-center">
+              <h4 class="font-semibold text-xl">College Calculators</h4>
+              <span
+                class="material-symbols-outlined text-green-500 group-hover:pl-1 transition-all duration-300 ease-in-out"
+              >
+                arrow_right_alt
+              </span>
+            </div>
+            <hr class="my-2" />
+            <div class="">
+              <ul class="text-sm flex flex-col gap-2">
+                <li
+                  class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium"
+                >
+                  College savings calculator
+                </li>
+                <li
+                  class="hover:underline underline-offset-2 hover:text-green-500 transition-all duration-300 ease-in-out font-medium"
+                >
+                  Student budget calculator
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
     <!------------ Compare Rates ----------------->
     <div class="w-full px-4 mt-16 mb-16">
-        <h3 class="font-semibold text-3xl">Compare rates</h3>
-        <div class="grid gap-4 grid-cols-1 sm:grid-cols-2 mt-4">
-            <div class="flex flex-col gap-2">
-                <h4 class="text-xl font-semibold">Mortgage rates</h4>
-                <hr />
-                <div>
-                    <ul class="grid grid-cols-2">
-                        <li>
-                            <a class="cursor-pointer text-sm hover:underline underline-offset-4 hover:text-green-500 decoration-green-500 transition-all duration-300 ease-in-out">
-                                30 year fixed
-                            </a>
-                        </li>
-                        <li>
-                            <a class="cursor-pointer text-sm hover:underline underline-offset-4 hover:text-green-500 decoration-green-500 transition-all duration-300 ease-in-out">
-                                30 year fixed refi
-                            </a>
-                        </li>
-                        <li>
-                            <a class="cursor-pointer text-sm hover:underline underline-offset-4 hover:text-green-500 decoration-green-500 transition-all duration-300 ease-in-out">
-                                15 year fixed
-                            </a>
-                        </li>
-                        <li>
-                            <a class="cursor-pointer text-sm hover:underline underline-offset-4 hover:text-green-500 decoration-green-500 transition-all duration-300 ease-in-out">
-                                15 year fixed refi
-                            </a>
-                        </li>
-                        <li>
-                            <a class="cursor-pointer text-sm hover:underline underline-offset-4 hover:text-green-500 decoration-green-500 transition-all duration-300 ease-in-out">
-                                5/1 ARM
-                            </a>
-                        </li>
-                        <li>
-                            <a class="cursor-pointer text-sm hover:underline underline-offset-4 hover:text-green-500 decoration-green-500 transition-all duration-300 ease-in-out">
-                                5/1 ARM (IO)
-                            </a>
-                        </li>
-                        <li>
-                            <a class="cursor-pointer text-sm hover:underline underline-offset-4 hover:text-green-500 decoration-green-500 transition-all duration-300 ease-in-out">
-                                7/1 ARM
-                            </a>
-                        </li>
-                        <li>
-                            <a class="cursor-pointer text-sm hover:underline underline-offset-4 hover:text-green-500 decoration-green-500 transition-all duration-300 ease-in-out">
-                                30 year jumbo
-                            </a>
-                        </li>
-                        <li>
-                            <a class="cursor-pointer text-sm hover:underline underline-offset-4 hover:text-green-500 decoration-green-500 transition-all duration-300 ease-in-out">
-                                30 year FHA
-                            </a>
-                        </li>
-                        <li>
-                            <a class="cursor-pointer text-sm hover:underline underline-offset-4 hover:text-green-500 decoration-green-500 transition-all duration-300 ease-in-out">
-                                See all mortgages
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="flex flex-col gap-2">
-                <h4 class="text-xl font-semibold">High yield CD and MMA rates</h4>
-                <hr />
-                <div>
-                    <ul class="grid grid-cols-2">
-                        <li>
-                            <a class="cursor-pointer text-sm hover:underline underline-offset-4 hover:text-green-500 decoration-green-500 transition-all duration-300 ease-in-out">
-                                6 month CD
-                            </a>
-                        </li>
-                        <li>
-                            <a class="cursor-pointer text-sm hover:underline underline-offset-4 hover:text-green-500 decoration-green-500 transition-all duration-300 ease-in-out">
-                                1 year CD
-                            </a>
-                        </li>
-                        <li>
-                            <a class="cursor-pointer text-sm hover:underline underline-offset-4 hover:text-green-500 decoration-green-500 transition-all duration-300 ease-in-out">
-                                18 month CD
-                            </a>
-                        </li>
-                        <li>
-                            <a class="cursor-pointer text-sm hover:underline underline-offset-4 hover:text-green-500 decoration-green-500 transition-all duration-300 ease-in-out">
-                                2 year CD
-                            </a>
-                        </li>
-                        <li>
-                            <a class="cursor-pointer text-sm hover:underline underline-offset-4 hover:text-green-500 decoration-green-500 transition-all duration-300 ease-in-out">
-                                3 year CD
-                            </a>
-                        </li>
-                        <li>
-                            <a class="cursor-pointer text-sm hover:underline underline-offset-4 hover:text-green-500 decoration-green-500 transition-all duration-300 ease-in-out">
-                                1 year jumbo CD
-                            </a>
-                        </li>
-                        <li>
-                            <a class="cursor-pointer text-sm hover:underline underline-offset-4 hover:text-green-500 decoration-green-500 transition-all duration-300 ease-in-out">
-                                3 year jumbo CD
-                            </a>
-                        </li>
-                        <li>
-                            <a class="cursor-pointer text-sm hover:underline underline-offset-4 hover:text-green-500 decoration-green-500 transition-all duration-300 ease-in-out">
-                                5 year IRA CD
-                            </a>
-                        </li>
-                        <li>
-                            <a class="cursor-pointer text-sm hover:underline underline-offset-4 hover:text-green-500 decoration-green-500 transition-all duration-300 ease-in-out">
-                                MMAs
-                            </a>
-                        </li>
-                        <li>
-                            <a class="cursor-pointer text-sm hover:underline underline-offset-4 hover:text-green-500 decoration-green-500 transition-all duration-300 ease-in-out">
-                                See all CDs
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="flex flex-col gap-2">
-                <h4 class="text-xl font-semibold">Other rates</h4>
-                <hr />
-                <div>
-                    <ul class="grid grid-cols-2">
-                        <li>
-                            <a class="cursor-pointer text-sm hover:underline underline-offset-4 hover:text-green-500 decoration-green-500 transition-all duration-300 ease-in-out">
-                                Savings
-                            </a>
-                        </li>
-                        <li>
-                            <a class="cursor-pointer text-sm hover:underline underline-offset-4 hover:text-green-500 decoration-green-500 transition-all duration-300 ease-in-out">
-                                Auto
-                            </a>
-                        </li>
-                        <li>
-                            <a class="cursor-pointer text-sm hover:underline underline-offset-4 hover:text-green-500 decoration-green-500 transition-all duration-300 ease-in-out">
-                                Credit cards
-                            </a>
-                        </li>
-                        <li>
-                            <a class="cursor-pointer text-sm hover:underline underline-offset-4 hover:text-green-500 decoration-green-500 transition-all duration-300 ease-in-out">
-                                Checking
-                            </a>
-                        </li>
-                        <li>
-                            <a class="cursor-pointer text-sm hover:underline underline-offset-4 hover:text-green-500 decoration-green-500 transition-all duration-300 ease-in-out">
-                                Home equity
-                            </a>
-                        </li>
-                        <li>
-                            <a class="cursor-pointer text-sm hover:underline underline-offset-4 hover:text-green-500 decoration-green-500 transition-all duration-300 ease-in-out">
-                                Auto refinance
-                            </a>
-                        </li>
-                        <li>
-                            <a class="cursor-pointer text-sm hover:underline underline-offset-4 hover:text-green-500 decoration-green-500 transition-all duration-300 ease-in-out">
-                                Student loans
-                            </a>
-                        </li>
-                        <li>
-                            <a class="cursor-pointer text-sm hover:underline underline-offset-4 hover:text-green-500 decoration-green-500 transition-all duration-300 ease-in-out">
-                                Personal loans
-                            </a>
-                        </li>
-                        <li>
-                            <a class="cursor-pointer text-sm hover:underline underline-offset-4 hover:text-green-500 decoration-green-500 transition-all duration-300 ease-in-out">
-                                Credit union CD
-                            </a>
-                        </li>
-                        <li>
-                            <a class="cursor-pointer text-sm hover:underline underline-offset-4 hover:text-green-500 decoration-green-500 transition-all duration-300 ease-in-out">
-                                Prime rate
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+      <h3 class="font-semibold text-3xl">Compare rates</h3>
+      <div class="grid gap-4 grid-cols-1 sm:grid-cols-2 mt-4">
+        <div class="flex flex-col gap-2">
+          <h4 class="text-xl font-semibold">Mortgage rates</h4>
+          <hr />
+          <div>
+            <ul class="grid grid-cols-2">
+              <li>
+                <a
+                  class="cursor-pointer text-sm hover:underline underline-offset-4 hover:text-green-500 decoration-green-500 transition-all duration-300 ease-in-out"
+                >
+                  30 year fixed
+                </a>
+              </li>
+              <li>
+                <a
+                  class="cursor-pointer text-sm hover:underline underline-offset-4 hover:text-green-500 decoration-green-500 transition-all duration-300 ease-in-out"
+                >
+                  30 year fixed refi
+                </a>
+              </li>
+              <li>
+                <a
+                  class="cursor-pointer text-sm hover:underline underline-offset-4 hover:text-green-500 decoration-green-500 transition-all duration-300 ease-in-out"
+                >
+                  15 year fixed
+                </a>
+              </li>
+              <li>
+                <a
+                  class="cursor-pointer text-sm hover:underline underline-offset-4 hover:text-green-500 decoration-green-500 transition-all duration-300 ease-in-out"
+                >
+                  15 year fixed refi
+                </a>
+              </li>
+              <li>
+                <a
+                  class="cursor-pointer text-sm hover:underline underline-offset-4 hover:text-green-500 decoration-green-500 transition-all duration-300 ease-in-out"
+                >
+                  5/1 ARM
+                </a>
+              </li>
+              <li>
+                <a
+                  class="cursor-pointer text-sm hover:underline underline-offset-4 hover:text-green-500 decoration-green-500 transition-all duration-300 ease-in-out"
+                >
+                  5/1 ARM (IO)
+                </a>
+              </li>
+              <li>
+                <a
+                  class="cursor-pointer text-sm hover:underline underline-offset-4 hover:text-green-500 decoration-green-500 transition-all duration-300 ease-in-out"
+                >
+                  7/1 ARM
+                </a>
+              </li>
+              <li>
+                <a
+                  class="cursor-pointer text-sm hover:underline underline-offset-4 hover:text-green-500 decoration-green-500 transition-all duration-300 ease-in-out"
+                >
+                  30 year jumbo
+                </a>
+              </li>
+              <li>
+                <a
+                  class="cursor-pointer text-sm hover:underline underline-offset-4 hover:text-green-500 decoration-green-500 transition-all duration-300 ease-in-out"
+                >
+                  30 year FHA
+                </a>
+              </li>
+              <li>
+                <a
+                  class="cursor-pointer text-sm hover:underline underline-offset-4 hover:text-green-500 decoration-green-500 transition-all duration-300 ease-in-out"
+                >
+                  See all mortgages
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
+        <div class="flex flex-col gap-2">
+          <h4 class="text-xl font-semibold">High yield CD and MMA rates</h4>
+          <hr />
+          <div>
+            <ul class="grid grid-cols-2">
+              <li>
+                <a
+                  class="cursor-pointer text-sm hover:underline underline-offset-4 hover:text-green-500 decoration-green-500 transition-all duration-300 ease-in-out"
+                >
+                  6 month CD
+                </a>
+              </li>
+              <li>
+                <a
+                  class="cursor-pointer text-sm hover:underline underline-offset-4 hover:text-green-500 decoration-green-500 transition-all duration-300 ease-in-out"
+                >
+                  1 year CD
+                </a>
+              </li>
+              <li>
+                <a
+                  class="cursor-pointer text-sm hover:underline underline-offset-4 hover:text-green-500 decoration-green-500 transition-all duration-300 ease-in-out"
+                >
+                  18 month CD
+                </a>
+              </li>
+              <li>
+                <a
+                  class="cursor-pointer text-sm hover:underline underline-offset-4 hover:text-green-500 decoration-green-500 transition-all duration-300 ease-in-out"
+                >
+                  2 year CD
+                </a>
+              </li>
+              <li>
+                <a
+                  class="cursor-pointer text-sm hover:underline underline-offset-4 hover:text-green-500 decoration-green-500 transition-all duration-300 ease-in-out"
+                >
+                  3 year CD
+                </a>
+              </li>
+              <li>
+                <a
+                  class="cursor-pointer text-sm hover:underline underline-offset-4 hover:text-green-500 decoration-green-500 transition-all duration-300 ease-in-out"
+                >
+                  1 year jumbo CD
+                </a>
+              </li>
+              <li>
+                <a
+                  class="cursor-pointer text-sm hover:underline underline-offset-4 hover:text-green-500 decoration-green-500 transition-all duration-300 ease-in-out"
+                >
+                  3 year jumbo CD
+                </a>
+              </li>
+              <li>
+                <a
+                  class="cursor-pointer text-sm hover:underline underline-offset-4 hover:text-green-500 decoration-green-500 transition-all duration-300 ease-in-out"
+                >
+                  5 year IRA CD
+                </a>
+              </li>
+              <li>
+                <a
+                  class="cursor-pointer text-sm hover:underline underline-offset-4 hover:text-green-500 decoration-green-500 transition-all duration-300 ease-in-out"
+                >
+                  MMAs
+                </a>
+              </li>
+              <li>
+                <a
+                  class="cursor-pointer text-sm hover:underline underline-offset-4 hover:text-green-500 decoration-green-500 transition-all duration-300 ease-in-out"
+                >
+                  See all CDs
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex flex-col gap-2">
+          <h4 class="text-xl font-semibold">Other rates</h4>
+          <hr />
+          <div>
+            <ul class="grid grid-cols-2">
+              <li>
+                <a
+                  class="cursor-pointer text-sm hover:underline underline-offset-4 hover:text-green-500 decoration-green-500 transition-all duration-300 ease-in-out"
+                >
+                  Savings
+                </a>
+              </li>
+              <li>
+                <a
+                  class="cursor-pointer text-sm hover:underline underline-offset-4 hover:text-green-500 decoration-green-500 transition-all duration-300 ease-in-out"
+                >
+                  Auto
+                </a>
+              </li>
+              <li>
+                <a
+                  class="cursor-pointer text-sm hover:underline underline-offset-4 hover:text-green-500 decoration-green-500 transition-all duration-300 ease-in-out"
+                >
+                  Credit cards
+                </a>
+              </li>
+              <li>
+                <a
+                  class="cursor-pointer text-sm hover:underline underline-offset-4 hover:text-green-500 decoration-green-500 transition-all duration-300 ease-in-out"
+                >
+                  Checking
+                </a>
+              </li>
+              <li>
+                <a
+                  class="cursor-pointer text-sm hover:underline underline-offset-4 hover:text-green-500 decoration-green-500 transition-all duration-300 ease-in-out"
+                >
+                  Home equity
+                </a>
+              </li>
+              <li>
+                <a
+                  class="cursor-pointer text-sm hover:underline underline-offset-4 hover:text-green-500 decoration-green-500 transition-all duration-300 ease-in-out"
+                >
+                  Auto refinance
+                </a>
+              </li>
+              <li>
+                <a
+                  class="cursor-pointer text-sm hover:underline underline-offset-4 hover:text-green-500 decoration-green-500 transition-all duration-300 ease-in-out"
+                >
+                  Student loans
+                </a>
+              </li>
+              <li>
+                <a
+                  class="cursor-pointer text-sm hover:underline underline-offset-4 hover:text-green-500 decoration-green-500 transition-all duration-300 ease-in-out"
+                >
+                  Personal loans
+                </a>
+              </li>
+              <li>
+                <a
+                  class="cursor-pointer text-sm hover:underline underline-offset-4 hover:text-green-500 decoration-green-500 transition-all duration-300 ease-in-out"
+                >
+                  Credit union CD
+                </a>
+              </li>
+              <li>
+                <a
+                  class="cursor-pointer text-sm hover:underline underline-offset-4 hover:text-green-500 decoration-green-500 transition-all duration-300 ease-in-out"
+                >
+                  Prime rate
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
-
-
   </div>
 </section>
