@@ -118,8 +118,9 @@
 
     <div class="form-group !mb-0">
       <!-- <label for="zipcode"></label> -->
-      <mat-form-field class="!mb-0 w-full sm:w-36">
-        <mat-label>Credit Score</mat-label>
+      <label for="annualInterestRate">Credit Score</label>
+
+      <mat-form-field class="!mb-0 w-full sm:w-36 h-16">
         <mat-select [(ngModel)]="selectedCredit" name="creditScore">
           @for (score of creditScores; track score) {
           <mat-option [value]="score.value">{{ score.viewValue }}</mat-option>
